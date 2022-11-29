@@ -64,7 +64,7 @@ function display(data){
               btn1.innerText = "ADD TO CART";
               btn1.onclick = ()=>{
 
-                  let obj = new dataObj(id, url1, url2, url3, img1, title, desc, price, strikePrice, delivery, color);
+                  let obj = new dataObj(id, url1, url2, url3, img1, title, desc, price, strikePrice, delivery, color, off);
                   let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
                   let flag = true;
@@ -83,7 +83,7 @@ function display(data){
               btn2.innerText = "SHORTLIST";
               btn2.onclick = ()=>{
 
-                  let obj = new dataObj(id, url1, url2, url3, img1, title, desc, price, strikePrice, delivery, color);
+                  let obj = new dataObj(id, url1, url2, url3, img1, title, desc, price, strikePrice, delivery, color, off);
                   let shortList = JSON.parse(localStorage.getItem("shortList")) || [];
 
                   let flag = true;
@@ -126,7 +126,7 @@ function display(data){
     })
 }
 
-function dataObj(id, url1, url2, url3, img1, title, desc, price, strikePrice, delivery, color){
+function dataObj(id, url1, url2, url3, img1, title, desc, price, strikePrice, delivery, color, off){
     this.id = id;
     this.img1 = url1;
     this.img2 = url2;
@@ -138,6 +138,7 @@ function dataObj(id, url1, url2, url3, img1, title, desc, price, strikePrice, de
     this.strikePrice = strikePrice;
     this.delivery = delivery;
     this.color = color;
+    this.off = off; 
 }
 
 let sort = document.getElementById("sort");
