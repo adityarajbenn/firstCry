@@ -1,0 +1,116 @@
+#top{
+           
+           
+    width: 8%;
+    margin: auto;
+}
+#top > img{
+    
+    align-items: center;
+    margin:auto ;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+#main {
+    width:500px;
+    
+    
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 15px;
+    
+    
+    
+}
+input{
+padding-left: 10px;
+margin-left: 30px;
+width: 85%;
+padding-top: 15px;
+padding-bottom: 15px;
+font-family: Arial, Helvetica, sans-serif;
+margin-top: 10px;
+margin-bottom: 25px;
+outline: none;
+background: transparent;
+border:none;
+border-bottom: 1px solid #999;
+
+}
+
+label{
+padding-left: 30px;
+}
+
+h3{
+font: bold;
+font-family: Arial, Helvetica, sans-serif;
+padding-left: 30px;
+}
+p{
+text-align: center;
+margin-top: 20px;
+margin-bottom: 30px;
+padding-bottom: 40px;
+
+}
+
+#main{
+margin: auto;
+align-items: center;
+}
+#sign {
+background-color: #2b619e;
+color: white;
+padding: 12px 20px;
+border: none;
+border-radius: 10px;
+cursor: pointer;
+width: 90%;
+font-size: 20px;
+
+
+}
+input[type="submit"]{
+color:white;
+padding: 12px 20px;
+
+border-radius: 5px;
+cursor: pointer;
+width: 90%;
+font-size: 20px;
+background-color:rgb(255, 72, 0);
+
+}
+h3{
+padding-top: 30px;
+}
+#or{
+    
+    text-align: center;
+    margin-top: -30px;
+}
+button{
+    color:black;
+
+border: 0.5px solid black;
+border-radius: 5px;
+cursor: pointer;
+width: 90%;
+font-size: 20px;
+background-color: white;
+padding-top: 9px;
+padding-bottom: 9px;
+margin-left: 30px;
+margin-bottom: 10px;
+}
+button>img{
+    height: 20px;
+    margin-right: 7px;
+    margin-top: 5px;
+    margin-bottom: -3px;
+}
+a{
+    color:#2979ff;
+    
+}
