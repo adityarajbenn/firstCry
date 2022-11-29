@@ -64,7 +64,7 @@ function display(data){
               btn1.innerText = "ADD TO CART";
               btn1.onclick = ()=>{
 
-                  let obj = new dataObj(id, url1, url2, url3, title, desc, price, strikePrice, delivery, color);
+                  let obj = new dataObj(id, url1, url2, url3, img1, title, desc, price, strikePrice, delivery, color);
                   let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
                   let flag = true;
@@ -83,7 +83,7 @@ function display(data){
               btn2.innerText = "SHORTLIST";
               btn2.onclick = ()=>{
 
-                  let obj = new dataObj(id, url1, url2, url3, title, desc, price, strikePrice, delivery, color);
+                  let obj = new dataObj(id, url1, url2, url3, img1, title, desc, price, strikePrice, delivery, color);
                   let shortList = JSON.parse(localStorage.getItem("shortList")) || [];
 
                   let flag = true;
@@ -119,18 +119,19 @@ function display(data){
         productDiv.append(div);
         
         imgDiv.onclick = ()=> {
-            let obj = new dataObj(id, url1, url2, url3, title, desc, price, strikePrice, delivery, color);
+            let obj = new dataObj(id, url1, url2, url3, img1, title, desc, price, strikePrice, delivery, color);
             localStorage.setItem("product", JSON.stringify(obj));
             window.location.href = "details.html";
         }
     })
 }
 
-function dataObj(id, url1, url2, url3, title, desc, price, strikePrice, delivery, color){
+function dataObj(id, url1, url2, url3, img1, title, desc, price, strikePrice, delivery, color){
     this.id = id;
     this.img1 = url1;
     this.img2 = url2;
     this.img3 = url3;
+    this.cartImg = img1;
     this.title = title;
     this.desc = desc;
     this.price = price;
