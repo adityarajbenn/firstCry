@@ -1,0 +1,452 @@
+/* font */
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    width: 95%;
+    margin: auto;
+}
+/* Product location */
+#location{
+    margin-left: 30px;
+}
+#location a{
+    color: grey;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+/* productDisplay */
+#parentDisplay{
+    display: flex;
+    margin: auto;
+    margin-top: 15px;
+    
+}
+#subChild{
+    position: sticky;
+    top: 10px;
+}
+#subJunior{
+    display: flex;
+}
+#childDisplay{
+    position: relative;
+}
+#sideImages{
+    display: block;
+    width: 65px;
+    /* border: 1px solid black; */
+}
+#sideImages img{
+    display: flex;
+    margin: auto;
+    margin-top: 10px;
+    padding: 5px;
+    width: 56px;
+}
+#sideImages img:hover{
+    border: 1px solid red;
+}
+#bigImage{
+    /* border: 1px solid black; */
+    display: block;
+    width: 438px;
+    margin-left: 10px ;
+    /* margin-left: 70px; */
+}
+#bigImage button{
+    padding: 12px;
+    width: 47%;
+    margin: 5px;
+    /* border: none; */
+    border-radius: 5px;
+}
+#addToCart{
+    background-color: #ff7043;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+#shortList{
+    background-color: white;
+    color: grey;
+    border: 1px solid rgb(208, 200, 200);
+    cursor: pointer;
+}
+
+/* productDetails */
+#productDetail{
+    margin-left: 15px;
+    width: 100%;
+}
+#priceDiv{
+    display: flex;
+}
+#one p{
+    font-size: 14px;
+}
+
+
+/* Making product fixed */
+/* #productDetail{
+    margin-left: 530px;
+}
+#bigImage{
+    margin-left: 70px;
+} */
+/* #sideImages,#bigImage */
+#childOne{
+    position: flex;
+    top: 10px;
+}
+
+/* product Fixed Ends here */
+
+
+
+#two1{
+    display: flex;
+    align-items: center;
+}
+#two1 h3,h4{
+    margin: 5px;
+    font-weight: 400;
+}
+#two p{
+    font-size: 14px;
+}
+#MRP{
+    color: rgb(107, 107, 107);
+}
+#discountText{
+    color: rgb(255, 64, 0);
+}
+#two3{
+    display: flex;
+    align-items: center;
+    width: 300px;
+    padding: 5px;
+    border: 1px solid rgb(202, 200, 200);
+    border-radius: 5px;
+}
+#two3 img{
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+}
+#two31 p,h4{
+    font-size: 12.5px;
+}
+#two31 p>span{
+    color: green;
+}
+#two31>h4{
+    margin-top: -10px;
+    font-size: 14px;
+    color: navy;
+}
+#two3>p{
+    display: flex;
+    margin-left: 45px;
+    color: rgb(255, 64, 0);
+}
+#scale{
+    display: flex;
+    color: #2979ff;
+    font-size: 13px;
+    align-items: center;
+    justify-content: flex-end;
+}
+#scale i{
+    font-size: 18px;
+    margin-left: 5px;
+}
+#colorBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80px;
+}
+#colorBoxIn{
+    width: 18px;
+    height: 18px;
+    background-color: #e97c4e;
+    outline: 2px solid #e97c4e;
+    outline-offset: 3px;
+    border-radius: 3px;    
+}
+#two4{
+    display: flex;
+    margin-top: 10px;
+}
+#two4>h4{
+    font-size: 15px;
+    font-weight: 550;
+}
+#two41{
+    display: grid;
+    width: 70%;
+    grid-template-columns: repeat(5,1fr);
+    gap: 10px;
+}
+#two41>div{
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid rgb(202, 200, 200);
+    color: rgb(202, 200, 200);
+}
+#two41>div:hover{
+    cursor: pointer;
+}
+#two41>.defaultDiv{
+    border: 1px solid black;
+    color: black;
+}
+#two41 h4{
+    text-align: center;
+}
+#sizingTip{
+    display: flex;
+    align-items: center;
+}
+#bestOffers{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+#bestOffers>i{
+    color: #ff7043;
+}
+#codeBoxes{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+#codeBoxOne{
+    display: flex;
+    align-items: center;
+    width: 300px;
+    font-size: 11px;
+    height: 90px;
+    text-align: center;
+    background-color: #FFFBE8;
+    border: 1px solid #F0E377;
+    border-radius: 10px;
+}
+#offerOne{
+        transform: rotate(270deg);
+        width: 90px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #F0E377;
+        color: rgb(83, 81, 81);
+        margin-left: -35px;
+        padding: 2px;
+        border-radius: 10px 10px 0px 0px;
+}
+#codeBoxInsideOne{
+    background-color: #FFFBE8;
+}
+#offerCodeOne{
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: #024581;
+    align-items: center;
+    margin: auto;
+    border-radius: 0px 0px 15px 15px;
+    font-size: 10px;
+    height: 25px;
+    width: 170px;
+}
+#howMuchDis{
+    color: black;
+}
+#howMuchDis h3{
+    margin: 5px;
+}
+#imageOffer{
+    display: flex;
+    align-items: center;
+}
+#imageOffer img{
+    width: 30px;
+    height: 30px;
+}
+#howMuchDis hr{
+    color: rgb(239, 108, 178);
+}
+#codeBoxTwo{
+    display: flex;
+    align-items: center;
+    width: 300px;
+    font-size: 11px;
+    height: 90px;
+    background-color: #FAECF6;
+    border: 1px solid #F6BDE3;
+    border-radius: 10px;
+}
+#offer{
+        transform: rotate(270deg);
+        width: 90px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #F6BDE3;
+        color: rgb(83, 81, 81);
+        margin-left: -35px;
+        padding: 2px;
+        border-radius: 10px 10px 0px 0px;
+}
+#codeBoxInside{
+    background-color: #FAECF6;
+    text-align: center;
+}
+#offerCode{
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: #024581;
+    align-items: center;
+    margin: auto;
+    border-radius: 0px 0px 15px 15px;
+    font-size: 10px;
+    height: 25px;
+    width: 170px;
+}
+
+#benefits{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#pincode{
+    padding: 5px;
+}
+#pincode::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+#pincodeCheckerBefore{
+    margin-bottom: 20px;
+}
+#pincodeCheckerAfter,#pincodeCheckerBefore{
+    width: 70%;
+}
+#truck,#pincodeCheckerAfter,#cod,#returnPolicy,#pincodeCheckerBefore,#rightSide{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#rightPincodeBox i,#rightSide i{
+    color: #ff7043;
+    padding: 10px;
+}
+#cod{
+    margin-top: 5px;
+}
+#returnPolicy{
+    margin-top: -10px;
+}
+#pincodeCheckerAfter{
+    display: none;
+}
+#afterPincode a{
+    color: #2979ff;
+    text-underline-offset: 5px;
+}
+#sizeFit{
+    width: 50%;
+}
+#ageDiv,#weightDiv{
+    display: flex;
+    justify-content: space-between;
+}
+#youMayLike{
+    margin-bottom: 15px;
+}
+#ymalItems{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    width: 80%;
+    gap: 10px;
+    margin: auto;
+}
+#ymalItems>div>img{
+    width: 70%;
+}
+#ymlPrices{
+    margin-top: -15px;
+    display: flex;
+}
+#discount{
+    color: #ff7043;
+}
+#feedbackDiv{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#feedbackDiv i{
+    font-size: 30px;
+    padding: 10px;
+}
+
+#feebackText h3{
+    margin-top: -5px;
+}
+#feebackText h4{
+    margin-top: -15px;
+    margin-left: 0px;
+}
+#feedbackInput input{
+    padding: 10px;
+    width: 40%;
+    border: 1px solid rgb(209, 209, 209);
+}
+#feedbackInput button{
+    padding: 10px;
+    margin-left: 5px;
+    background-color: #2979ff;
+    color: white;
+    border: 1px solid #2979ff;
+    border-radius: 3px;
+}
+
+/* confidence */
+#confidence{
+    display: flex;
+    justify-content: space-around;
+    background-color: #f5f5f5;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+#confidence>div{
+    display: flex;
+    align-items: center;
+}
+#confidence>div>img{
+    height: 32px;
+    width: 32px;
+    margin-right: 10px;
+}
+
+
+
+/* resposiveness */
+@media screen and  (max-width: 900px){
+    #parentDisplay{
+        display: block;
+    }
+    
+}
