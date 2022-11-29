@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f6f6f6;
+}
+
+/* CONTAINER  */
+#container{
+    width: 77%;
+    margin: auto;
+}
+
+/* CART BUTTONS  */
+#cartBtns{
+    display: flex;
+}
+
+#cartBtns > div{
+    padding: 20px;
+}
+
+#cartBtns > div{
+    padding: 16px 25px;
+}
+
+#cartBtns  p{
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.645);
+}
+
+/* PARTS */
+#parts{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+/* LEFT PART  */
+
+#leftPart{
+    background-color: #fff;
+}
+
+/* CART DIV  */
+
+#cartDiv{
+
+}
+
+#deliveryDiv{
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.168);
+    margin: 10px;
+    justify-content: space-between;
+    padding: 4px 20px;
+    border-radius: 4px;
+}
+
+#deliveryDiv > div:first-child{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.851);
+}
+
+#deliveryDiv > div:first-child i{
+    margin-right: 10px;
+}
+
+#deliveryDiv button{
+    padding: 8px;
+    font-size: 13px;
+    background-color: transparent;
+    border: 1px solid #ff7043;
+    color: #ff7043;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+/* PRODUCTS DIV  */
+#cartProducts{
+
+}
+
+#cartProducts .product:first-child{
+    border-top: 1px solid rgba(0, 0, 0, 0.134);
+}
+
+#cartProducts .product{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.134);
+}
+
+/* FIRST DIV  */
+.firstDiv{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.107);
+}
+
+/* Div 1 */
+
+.firstDiv > div:nth-child(1){
+    padding: 30px;
+}
+
+.firstDiv > div:nth-child(1) img{
+    width: 100%;
+}
+
+/* Div 2 */
+.firstDiv > div:nth-child(2){
+    padding-right: 10px;
+}
+
+.firstDiv > div:nth-child(2) .title{
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.777);
+}
+
+.firstDiv > div:nth-child(2) .size{
+    color: rgba(0, 0, 0, 0.746);
+    margin: 0 0 5px;
+}
+
+.firstDiv > div:nth-child(2) .size > span{
+    color: black;
+}
+
+.firstDiv > div:nth-child(2) .delivery{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.746);
+    display: flex;
+    align-items: center;
+}
+
+.firstDiv > div:nth-child(2) .delivery span{
+    margin-right: 5px;
+}
+
+/* Div 3 */
+.firstDiv > div:nth-child(3){
+    padding: 0 5px ;
+    border-left: 1px solid rgba(0, 0, 0, 0.107);
+}
+
+.firstDiv > div:nth-child(3) .price{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.firstDiv > div:nth-child(3) .mrp{
+    color: rgba(0, 0, 0, 0.746);
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.firstDiv > div:nth-child(3) .mrp span{
+    margin-left: 5px;
+}
+
+.firstDiv > div:nth-child(3) .mrp .strikeSpan{
+    text-decoration: line-through;
+}
+
+.firstDiv > div:nth-child(3) .mrp .percentSpan{
+    color: rgba(255, 0, 0, 0.846);
+}
+
+.clubPrice > div{
+    width: 25px;
+    height: 25px;
+}
+
+.clubPrice > p{
+    margin: 0;
+}
+
+.clubPrice img{
+    width: 100%;
+}
+
+.clubPrice{
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+}
+
+.firstDiv .taxP{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.609);
+}
+
+.firstDiv .qtyDiv p{
+    margin: 0 5px 0 0;
+    font-weight: 500;
+}
+
+.firstDiv .qtyDiv{
+    display: flex;
+}
+
+.firstDiv .qtyDiv select{
+    border: none;
+    font-size: 16px;
+    outline: none;
+}
+
+.firstDiv .qtyDiv option{
+    /* font-weight: 500; */
+}
+
+/* SECOND DIV  */
+
+.secondDiv {
+    display: flex;
+    padding: 5px;
+}
+
+.secondDiv button{
+    display: flex;
+    align-items: center;
+    padding: 13px 15px;
+    font-weight: 500;
+    background-color: #fff;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.secondDiv button > span{
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+.secondDiv > div:nth-child(1){
+    border-right: 1px solid rgba(0, 0, 0, 0.134);
+}
+
+.secondDiv > div:nth-child(2) button{
+    color: orangered;
+}

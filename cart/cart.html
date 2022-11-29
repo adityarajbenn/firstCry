@@ -4,9 +4,109 @@
         <title>Shopping Cart</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
+        <link href="./cart.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/dcce0f47df.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     </head>
     <body>
     
+        <nav></nav>
+
+        <div id="container">
+            <div id="cartBtns">
+                <div> <p>Shopping Cart (2)</p> </div>
+                <div> <p>My Shortlist</p> </div>
+            </div>
+        
+            <div id="parts">
+                <!-- LEFT PART  -->
+                <div id="leftPart">
+                    
+                    <div id="cartDiv">
+                        <div id="deliveryDiv">
+                            <div>
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p>Delivery Pincode: 680712</p>
+                            </div>
+                            <div>
+                                <button>CHANGE</button>
+                            </div>
+                            
+                        </div>
+
+                        <div id="cartProducts">
+                            
+                            <div class="product">
+                                <div class="firstDiv">
+                                    <div>
+                                        <div class="imgDiv">
+                                            <img src="https://cdn.fcglcdn.com/brainbees/images/products/300x364/11525944a.webp" alt="">
+                                        </div>
+                                    </div>
+    
+                                    <div>
+                                        <p class="title">Babyhug Full Sleeves Tee Text Print Pack of 3 - Red White</p>
+                                        <p class="size">Size: <span>12-18M</span></p>
+                                        <p class="size">Ideal Weight (Kgs): 9.6 - 10.9</p>
+                                        <p class="delivery"><span class="material-symbols-outlined">local_shipping</span> Get it by Monday, Dec 05</p>
+                                        <p class="delivery"> Dispatch Within: 24 Hours</p>
+                                    </div>
+    
+                                    <div>
+                                        <p class="price">₹868</p>
+                                        <p class="mrp">MRP <span class="strikeSpan"> ₹868 </span> <span class="percentSpan">21% OFF</span></p>
+                                        <div class="clubPrice">
+                                            <div>
+                                                <img src="./img/star.png" alt="">
+                                            </div>
+                                            <p>Club Price : </p>
+                                            <span> ₹868.21</span>
+                                        </div>
+                                        <p class="taxP">MRP Includes all taxes</p>
+
+                                        <div class="qtyDiv">
+                                            <p>Qty: </p>
+                                            <select>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="secondDiv">
+                                    <div>
+                                        <button><span class="material-symbols-outlined">delete</span>REMOVE</button>
+                                    </div>
+                                    <div>
+                                        <button><span class="material-symbols-outlined">favorite</span>MOVE TO SHORTLIST</button>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                    <div id="shortlistDiv">
+                        
+                    </div>
+                    
+
+                </div>
+                <!-- RIGHT PART  -->
+                <div id="rightPart">
+                    
+                </div>
+            </div>
+            
+        </div>
+
+        <script src="cart.js"></script>
     </body>
 </html>
