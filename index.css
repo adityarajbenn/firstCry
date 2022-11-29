@@ -122,6 +122,7 @@ a{
 }
 
 
+
 /* Slider   */
 html, body {
     height: 100%; 
@@ -152,7 +153,6 @@ html, body {
     align-items: flex-end;
     justify-content: center;
     position: absolute;
-    left: 100%;
     /* animation duration can't be greater than variable interval in JS! */
     /* check JS for other settings */
     animation: .6s cubic-bezier(0.645, 0.045, 0.355, 1) 0s left;
@@ -218,6 +218,165 @@ html, body {
     from { left: 0; }
     to { left: 100%; }
   }
+
+
+.baby {
+    font-size: 24px;
+    color: #363636;
+    margin-left: 15px;
+    margin-right: 7px;
+}
+#new-boutique{
+    background-color: #eee;
+    padding: 31px 50px 26px;
+    text-align: center;
+    margin-top: 40px;
+}
+.baby-faishon-text {
+  height: 46px;
+}
+.grid-block {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+.img-block{
+    background-color: #fff;
+    border-radius: 5px;
+}
+.footer-sticky >img {
+  width: 100%;
+}
+.content-blog{
+  margin: 0px 70px 0px 30px;
+    display: block;
+    height: 90px;
+    text-align: left;
+}
+.head {
+  text-transform: capitalize;
+  font-size: 15px;
+  color: #363636;
+  margin-top: 19px;
+  margin-bottom: 4px;
+}
+.title {
+  font-size: 15px;
+  color: #9e9e9e;
+  width: 260px;
+  height: 17px;
+  float: left;
+}
+.shop-now {
+  color: #363636;
+  font-size: 16px;
+  margin-top: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.cpidContainer > img {
+  width: 100%;
+  vertical-align: middle;
+}
+body{
+    line-height: 1;
+    background-image: url(//cdn.fcglcdn.com/brainbees/images/n/main-bg.jpg);
+    background-repeat: repeat;
+}
+#cpidParent {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 1280px;
+}
+.fc_month{
+  width: 12.5%;
+  display: flex;
+}
+.fc_month > img {
+  vertical-align: middle;
+  width: 100%;
+}
+.fc_winter{
+  width: 20%;
+  display: flex;
+}
+.fc_winter > img {
+  vertical-align: middle;
+  width: 100%;
+}
+.fc_brand{
+  display: grid;
+  grid-template-columns: repeat(8,1fr);
+}
+.fc_brand > img , .fc_baby> img {
+  vertical-align: middle;
+  width: 100%;
+}
+.fc_outwear{
+  width: 20%;
+  display: flex;
+}
+.fc_outwear > img{
+  vertical-align: middle;
+  width: 100%;
+}
+.fc_outwear_1{
+  width: 16.66%;
+  display: flex;
+}
+.fc_outwear_1 > img {
+  vertical-align: middle;
+  width: 100%;
+}
+.fc_baby{
+  width: 14.28%;
+  display: flex;
+}
+.fc_month_1{
+  display: grid;
+  grid-template-columns: repeat(8,1fr);
+  background-color: #fff;
+}
+.fc_month_1 > img, .fc_outwear_2>img,.fc_book >img,.fc_book_age >img ,
+.authors >img , .fc_sports >img , .fc_brand_1 >img ,.fc_nursery > img{
+  vertical-align: middle;
+  width: 100%;
+}
+.fc_outwear_2{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+
+}
+.fc_book{
+  display: grid;
+  grid-template-columns: repeat(9,1fr);
+  background-color: #fff;
+}
+.fc_book_age{
+  width: 9.09%;
+  display: flex;
+}
+.authors{
+  width: 5.88%;
+  display: flex;
+}
+.fc_sports{
+  width: 50%;
+  display: flex;
+}
+.fc_brand_1{
+  display: grid;
+  grid-template-columns: repeat(8,1fr);
+}
+.fc_nursery{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+}
+
+
+
+
+
 
 
 

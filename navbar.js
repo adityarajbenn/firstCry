@@ -44,7 +44,8 @@ let navbar = () =>{
             <li class="M14_42 carters"><a href=""><img src="https://cdn.fcglcdn.com/brainbees/banners/FC-menu-carters-logo.webp"></a></li>
         </ul>
 
-    </div>`
+    </div>
+    `
 }
 
 
