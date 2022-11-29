@@ -1,13 +1,26 @@
 
-
+let total = 0;
+let discount = 0;
+let realPrice = 0;
 
 function display(data){
     let cartProducts = document.getElementById('cartProducts');
     cartProducts.innerHTML = null;
     console.log(data);
     data.map((elem)=> {
+
+      let curTotal = elem.strikePrice * (elem.qty || 1);
+      total += curTotal;
+
+      let curReal = elem.price * (elem.qty || 1);
+      realPrice += curReal;
+
+      let curDisc = (elem.strikePrice - elem.price) * (elem.qty || 1);
+      discount += curDisc;
+
+
         let productDiv = document.createElement('div');
-        productDiv.setAttribute('class', 'productDiv');
+        productDiv.setAttribute('class', 'product');
 
           let firstDiv = document.createElement('div');
           firstDiv.setAttribute('class', 'firstDiv');
@@ -45,10 +58,10 @@ function display(data){
 
               let price = document.createElement('p');
               price.setAttribute('class', 'price');
-                price.textContent = `₹${elem.price}`;
+                price.textContent = `₹${elem.price *(elem.qty || 1)}`;
               let mrp = document.createElement('p');
               mrp.setAttribute('class', 'mrp');
-                mrp.innerHTML = `MRP <span class="strikeSpan"> ₹${elem.strikePrice} </span> <span class="percentSpan">${elem.off}% OFF</span>`;
+                mrp.innerHTML = `MRP <span class="strikeSpan"> ₹${elem.strikePrice *(elem.qty || 1)} </span> <span class="percentSpan">${elem.off}% OFF</span>`;
             
               let clubPriceDiv = document.createElement('div');
                 clubPriceDiv.setAttribute('class', 'clubPrice');
@@ -76,11 +89,6 @@ function display(data){
                   qtyP.textContent = 'Qty: ';
 
                 let select = document.createElement('select');
-                //   select.innerHTML = '<option value="1">1</option>
-                //     <option value="2">2</option>
-                //     <option value="3">3</option>
-                //     <option value="4">4</option>
-                //     <option value="5">5</option>';
                     let op1 = document.createElement('option');
                       op1.innerText = 1;
                     let op2 = document.createElement('option');
@@ -91,9 +99,13 @@ function display(data){
                       op4.innerText = 4;
                     let op5 = document.createElement('option');
                       op5.innerText = 5;
-
+                
                 select.append(op1, op2, op3, op4, op5);
 
+                // select.value = `${op${}.innerText}`; 
+                select.onchange = ()=> {
+                    console.log(select.value)
+                }
               qtyDiv.append(qtyP, select);
 
             div3.append(price, mrp, clubPriceDiv, taxP, qtyDiv);
@@ -116,6 +128,11 @@ function display(data){
           productDiv.append(firstDiv, secondDiv);
           cartProducts.append(productDiv);
     })
+
+    document.getElementById('strikeTot').textContent = `₹${total}`;
+    document.getElementById('discTot').textContent = `₹${discount}`;
+    document.getElementById('subTot').textContent = `₹${realPrice - 77}`;
+    document.getElementById('final').textContent = `₹${realPrice - 77}`; 
 }
 
 let data = JSON.parse(localStorage.getItem('cart'));

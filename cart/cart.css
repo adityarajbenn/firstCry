@@ -3,7 +3,7 @@
 body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: #f6f6f6;
+    background-color: #f4f4f4;
 }
 
 /* CONTAINER  */
@@ -22,7 +22,8 @@ body{
 }
 
 #cartBtns > div{
-    padding: 16px 25px;
+    padding: 14px 25px;
+    cursor: pointer;
 }
 
 #cartBtns  p{
@@ -32,16 +33,24 @@ body{
     color: rgba(0, 0, 0, 0.645);
 }
 
+#cartBtns > div:first-child{
+    background-color: #fff;
+    border-top: 3.5px solid #f45d2f;
+}
+
 /* PARTS */
 #parts{
     display: grid;
     grid-template-columns: 2fr 1fr;
+    gap: 10px;
+    margin-bottom: 30px;
 }
 
 /* LEFT PART  */
 
 #leftPart{
     background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 /* CART DIV  */
@@ -84,7 +93,7 @@ body{
 
 /* PRODUCTS DIV  */
 #cartProducts{
-
+    border-bottom: 10px solid #f4f4f4;
 }
 
 #cartProducts .product:first-child{
@@ -100,13 +109,13 @@ body{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     padding-bottom: 15px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.107);
 }
 
 /* Div 1 */
 
 .firstDiv > div:nth-child(1){
     padding: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.107);
 }
 
 .firstDiv > div:nth-child(1) img{
@@ -116,6 +125,7 @@ body{
 /* Div 2 */
 .firstDiv > div:nth-child(2){
     padding-right: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.107);
 }
 
 .firstDiv > div:nth-child(2) .title{
@@ -211,8 +221,66 @@ body{
     outline: none;
 }
 
-.firstDiv .qtyDiv option{
-    /* font-weight: 500; */
+/* PLACE ORDER DIV  */
+#placeOrder{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1.2fr;
+    gap: 10px;
+}
+
+#placeOrder #method{
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    border: 1px solid rgba(0, 0, 0, 0.144);
+    border-radius: 4px;
+}
+
+#placeOrder #method button{
+    padding: 8px;
+    font-size: 13px;
+    background-color: transparent;
+    border: 1px solid #ff7043;
+    color: #ff7043;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+#placeOrder #method p{
+    color: rgba(0, 0, 0, 0.655);
+    font-size: 15px;
+    margin-right: 15px;
+}
+
+#placeOrder #order{
+    background-color: #ff7043;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 9px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#placeOrder #order p{
+    margin: 0;
+    color: #fff;
+}
+
+#placeOrder #order > div:first-child p:first-child{
+    font-size: 12px;
+}
+
+#placeOrder #order > div:first-child p:last-child{
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+#placeOrder #order > div:last-child p{
+    font-size: 15px;
+    font-weight: 500;
+    margin-right: 5px;
 }
 
 /* SECOND DIV  */
@@ -244,4 +312,113 @@ body{
 
 .secondDiv > div:nth-child(2) button{
     color: orangered;
+}
+
+/* RIGHT PART  */
+#rightPart{
+
+}
+
+#rightPart > div:nth-child(1){
+    padding: 15px 20px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 3px;
+}
+
+#rightPart > div:nth-child(1) > p{
+    margin: 0;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.628);
+}
+
+#rightPart > div:nth-child(1) > p > span:first-child{
+    color: #ff7043;
+    font-size: 17px;
+}
+
+#rightPart > div:nth-child(1) > p > span:last-child{
+    color: #000;
+    font-weight: 500;
+}
+
+#rightPart > div:nth-child(2){
+    padding: 15px 20px;
+    background-color: #fff1ec;
+    margin: 10px 0;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-left: 5px solid #ff7043;
+    border-radius: 3px;
+}
+
+#rightPart > div:nth-child(2) p{
+    margin: 0;
+    font-size: 13px;
+}
+
+#rightPart > div:nth-child(2) > p{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#rightPart > div:nth-child(2) > div{
+    padding: 10px 0;
+}
+
+/* PAYMENT DIV  */
+#paymentDiv{
+    background-color: #fff;
+    padding: 15px 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    margin-top: 15px;
+    border-radius: 3px;
+}
+
+#paymentDiv > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#paymentDiv > p{
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#paymentDiv > div p,
+#paymentDiv > div span{
+    margin: 5px 0;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.678);
+}
+
+#paymentDiv > div p{
+    margin: 5px 0;
+}
+
+#paymentDiv .green{
+    color: rgb(49, 178, 49);
+}
+
+#paymentDiv .red{
+    color: red;
+}
+
+#paymentDiv #subTotal,
+#paymentDiv #finalPayment{
+    padding: 8px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.097);
+}
+
+#paymentDiv #subTotal p{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.785);
+    font-weight: 500;
+}
+
+#paymentDiv #finalPayment p{
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.874);
+    font-weight: 500;
 }
