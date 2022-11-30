@@ -1,12 +1,18 @@
-import tShirt from "./data.js";
+import fetchData from "./utils/fetch.js";
 import {discSort, lthSort, htlSort, atzSort, ztaSort} from "./utils/sort.js";
 
-let data = tShirt();
-localStorage.setItem("tShirtData", JSON.stringify(data));
-localStorage.setItem("curData", JSON.stringify(data));
 
-console.log(data);
-display(data);
+async function tShirt(){
+    let data = await fetchData();
+    console.log(data);
+    localStorage.setItem("tShirtData", JSON.stringify(data));
+    localStorage.setItem("curData", JSON.stringify(data));
+    display(data);
+}
+
+tShirt();
+
+
 
 function display(data){
     let productDiv = document.getElementById("productDiv");
@@ -223,7 +229,10 @@ function sortPrice(pr, val){
     
         display(sortedData)
         localStorage.setItem("curData", JSON.stringify(sortedData));
-    }else display(data);
+    }else{
+        let tShirtData = JSON.parse(localStorage.getItem("tShirtData"));
+        display(tShirtData);
+    }
     sort.selectedIndex = 0;
 }
 
@@ -283,7 +292,10 @@ function sortDisc(d, val){
   
       display(sortedData)
       localStorage.setItem("curData", JSON.stringify(sortedData));
-  }else display(data);
+  }else{
+        let tShirtData = JSON.parse(localStorage.getItem("tShirtData"));
+        display(tShirtData);
+  };
   sort.selectedIndex = 0;
 }
 
@@ -343,6 +355,9 @@ function sortColor(c, val){
   
       display(sortedData)
       localStorage.setItem("curData", JSON.stringify(sortedData));
-  }else display(data);
+  }else{
+        let tShirtData = JSON.parse(localStorage.getItem("tShirtData"));
+        display(tShirtData);
+  }
   sort.selectedIndex = 0;
 }
