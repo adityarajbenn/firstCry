@@ -10,7 +10,7 @@ function login(event) {
           //  console.log(loginArr[i].email, email, loginArr[i].password, password)
             if (loginArr[i].email == email || loginArr[i].number == email) {
                 alert("Login Successfull");
-                    window.location.href = "../index.html"
+                    window.location.href = "../Landing/index.html"
                 break;
             } else {
                 if ((loginArr.length - 1) == i) {
