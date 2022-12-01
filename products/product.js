@@ -1,5 +1,9 @@
 import fetchData from "./utils/fetch.js";
 import {discSort, lthSort, htlSort, atzSort, ztaSort} from "./utils/sort.js";
+import {navbar, footer} from "./components/nav.js";
+
+document.querySelector('nav').innerHTML = navbar();
+document.querySelector('footer').innerHTML = footer();
 
 
 async function tShirt(){
