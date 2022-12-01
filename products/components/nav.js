@@ -2,7 +2,7 @@ let navbar = () =>{
     return ` <div id="logo-container">
     <div class="logo_head">
     <div class="fc_logo">
-        <a href="../index.html"><img class="header_logo" src="https://cdn.fcglcdn.com/brainbees/images/n/fc_logo.png" alt="logoimg"></a>
+        <a href="../Landing/index.html"><img class="header_logo" src="https://cdn.fcglcdn.com/brainbees/images/n/fc_logo.png" alt="logoimg"></a>
     </div>
     <div class="fc_search">
         <form class="headSearchBox">

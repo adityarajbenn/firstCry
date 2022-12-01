@@ -86,6 +86,7 @@ function display(data){
                       cart.push(obj);
                       localStorage.setItem("cart", JSON.stringify(cart));
                   }
+                  btn1.innerText = "GO TO CART";
                   updateTot();
                   // console.log(obj);
               };
@@ -135,6 +136,7 @@ function display(data){
         }
     });
 }
+
 
 function dataObj(id, url1, url2, url3, img1, title, desc, price, strikePrice, delivery, color, off){
     this.id = id;
