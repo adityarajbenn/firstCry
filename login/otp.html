@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="signIn.css">
+    <link rel="stylesheet" href="otp.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
@@ -17,32 +17,44 @@
         <img src="https://cdn.fcglcdn.com/brainbees/images/n/fc-logo-s.jpg" alt="logo">
     </div>
     <div id="parent" >
-        <h2><a href="login.html"><span  class="material-symbols-outlined">
+        <h2><a href="signIn.html"><span  class="material-symbols-outlined">
             arrow_back_ios
             </span></a>Register</h2>
         <form action="" id="form">
-            <label for="">Full name</label><br>
-            <input id="name" type="text" placeholder="Enter your full name"><br>
-            <label for="">Mobile No.</label><br>
-            <input type="tel" id="mobile"   placeholder="Enter Your mobile Number" ><br>
-            <label for="">Email</label>
-            <br>
-            <input type="email" name="" id="email" placeholder="Enter email"><br>
-            <label for="">Password</label><br>
-            <input type="password" name="" id="pass" placeholder="Enter password"><br>
+           
+            <label for="">OTP Number.</label><br>
+            <input type="number" id="otp"   placeholder="Enter Your mobile Number" ><br>
+           
 
-            <p>Password must be at least 8 characters long with 1 <br> Uppercase, 1 Lowercase & 1 Numeric character.</p>
+           
      
         <input  type="submit" value="CONTINUE" id="signup" >
+        <p>By continuing, you agree to Firstcry's <a style="text-decoration: none;" href="https://www.firstcry.com/termsofuse">Condition of use</a><br>
+            and <a style="text-decoration: none;" href="https://www.firstcry.com/privacypolicy">privacy notice</a></p>
+        
        
         
     </form>
+    
 
     </div>
-    
-        
+   
 
 </body>
 
 </html>
-<script src="signIn.js"></script>
+<script >
+    document.getElementById("form").addEventListener("submit",otp);
+    let see=1234;
+    function otp(){
+        event.preventDefault();
+        var seeagain=document.getElementById("otp").value;
+        if(see==seeagain){
+            window.location.href = "landingpage.html";
+            
+        }
+        else{
+            alert("Wrong Otp")
+        }
+    }
+</script>
