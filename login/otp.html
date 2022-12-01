@@ -23,7 +23,7 @@
         <form action="" id="form">
            
             <label for="">OTP Number.</label><br>
-            <input type="number" id="otp"   placeholder="Enter Your mobile Number" ><br>
+            <input type="number" id="otp"   placeholder="Enter Your 4 digit otp Number" ><br>
            
 
            
@@ -50,7 +50,9 @@
         event.preventDefault();
         var seeagain=document.getElementById("otp").value;
         if(see==seeagain){
+            alert("login succesfully")
             window.location.href = "../index.html";
+            
             
         }
         else{

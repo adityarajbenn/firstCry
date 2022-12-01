@@ -1,7 +1,7 @@
 #logo{
            
            
-    width: 8%;
+    width: 150px;
     margin: auto;
 }
 #logo > img{
@@ -13,7 +13,7 @@
     padding-bottom: 5px;
 }
 #parent {
-    width: 35%;
+    width: 450px;
     
     margin: auto;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
