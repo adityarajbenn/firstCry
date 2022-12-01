@@ -4,10 +4,12 @@
         <title>Shopping Cart</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="./styles/nav.css" rel="stylesheet">
         <link href="./styles/cart.css" rel="stylesheet">
         <link href="./styles/responsive.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/dcce0f47df.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link rel="icon" href="https://play-lh.googleusercontent.com/MnuZ2c-iJgXdlyjs1lMAzBR6meMfkSBmPAebq9LGnVi83NNGpd0dPMGS5sJQS_EO_w" type="image/x-icon">
     </head>
     <body>
     
@@ -27,7 +29,7 @@
                         <div id="deliveryDiv">
                             <div>
                                 <i class="fa-solid fa-location-dot"></i>
-                                <p>Delivery Pincode: 680712</p>
+                                <p>Delivery Pincode: <span id="pinCode"></span></p>
                             </div>
                             <div>
                                 <button>CHANGE</button>
@@ -37,7 +39,7 @@
 
                         <div id="cartProducts">
                             
-                            <div class="product">
+                            <!-- <div class="product">
                                 <div class="firstDiv">
                                     <div>
                                         <div class="imgDiv">
@@ -87,7 +89,7 @@
                                     </div>
                                 </div>
                                 
-                            </div>
+                            </div> -->
 
 
                         </div>
@@ -122,15 +124,15 @@
                 <!-- RIGHT PART  -->
                 <div id="rightPart">
                     <div>
-                        <p><span>OFFER </span> Flat 30% OFF* on minimum purchase of Rs. 2499.Use Code:<span>CART30</span></p>
+                        <p><span>OFFER </span> Flat 30% OFF* on minimum purchase of Rs. 2499.Use Code: <span> masai30</span></p>
                     </div>
 
                     <div id="couponDiv">
                         <p> Coupon/Gift Certificate</p>
                         <div>
-                            <input type="radio" checked>
+                            <input type="radio" checked name="coup">
                             <p>Coupon</p>
-                            <input type="radio">
+                            <input type="radio" name="coup">
                             <p>Gift Certificate</p>
                         </div>
 
@@ -217,7 +219,7 @@
 
                             <div id="expand">
                                 <p>Please provide valid UPI handle i.e (Virtual Payment Address)</p>
-                                <input type="text" placeholder="Ex-mobileno@ybl or userid@okhdfcbank">
+                                <input type="text" id="upiNumber" placeholder="Ex-mobileno@ybl or userid@okhdfcbank">
                                 <button id="payNow">PAY NOW <span id="payTotal"> </span></button>
                             </div>
                         </div>
@@ -272,6 +274,6 @@
                     
         </div>
 
-        <script src="cart.js"></script>
+        <script src="cart.js" type="module"></script>
     </body>
 </html>

@@ -4,12 +4,15 @@ body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
     background-color: #f4f4f4;
+    padding-bottom: 50px;
 }
 
 /* CONTAINER  */
 #container{
     width: 77%;
     margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 /* CART BUTTONS  */
@@ -39,6 +42,10 @@ body{
     z-index: -1;
 }
 
+#cartBtns > div:first-child p{
+    color: #f45d2f;
+}
+
 /* PARTS */
 #parts{
     display: grid;
@@ -56,10 +63,6 @@ body{
 }
 
 /* CART DIV  */
-
-#cartDiv{
-
-}
 
 #deliveryDiv{
     display: flex;

@@ -1,3 +1,11 @@
+import {navbar, footer} from './components/nav.js'
+
+document.querySelector('nav').innerHTML = navbar();
+
+
+let pinCode = document.getElementById('pinCode');
+pinCode.textContent = localStorage.getItem('pin') || "680712";
+
 
 function display(data){
 
@@ -43,10 +51,10 @@ function display(data){
                 title.textContent = elem.title;
               let size = document.createElement('p');
               size.setAttribute('class', 'size');
-                size.innerHTML = 'Size: <span>12-18M</span>';
+                size.innerHTML = `Size: <span>${elem.size || "12-18M"}</span>`;
               let weight = document.createElement('p');
               weight.setAttribute('class', 'size');
-                weight.textContent = 'Ideal Weight (Kgs): 9.6 - 10.9';
+                weight.textContent = `Ideal Weight (Kgs): ${elem.weight || "9.6 - 10.9"}`;
               let delivery = document.createElement('p');
               delivery.setAttribute('class', 'delivery');
                 delivery.textContent = elem.delivery;
@@ -422,7 +430,8 @@ let apply = document.getElementById('apply');
 
 apply.onclick = ()=> {
     let amount = localStorage.getItem('total');
-    if(couponCode.value == 'masai30'){
+    if(couponCode.value == 'masai30'  && amount >= 1000){
+      console.log(amount)
         amount = ((amount*70) / 100).toFixed(2);
         document.getElementById('totalPrice').textContent = `₹${amount}`; 
         document.getElementById('payTotal').textContent = `₹${amount}`; 
@@ -430,3 +439,10 @@ apply.onclick = ()=> {
     couponCode.value = null;
 }
 
+let upiNumber = document.getElementById('upiNumber');
+let payNow = document.getElementById('payNow');
+
+payNow.onclick = ()=> {
+    console.log(upiNumber.value)
+    window.location.href = "./success.html";
+}
