@@ -24,5 +24,6 @@ function registration(event) {
     localStorage.setItem("userInfo", JSON.stringify(userArr))
     alert("Check Otp In your mobile Number");
     window.location.href = "otp.html"
+    localStorage.setItem("name",fullname);
     }
 }
