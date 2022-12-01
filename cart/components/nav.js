@@ -1,7 +1,7 @@
 let navbar = () =>{
     return `<div id="logo-container">
     <div class="fc_logo">
-        <a href=""><img class="header_logo" src="https://cdn.fcglcdn.com/brainbees/images/n/fc_logo.png" alt="logoimg"></a>
+        <a href="../Landing/index.html"><img class="header_logo" src="https://cdn.fcglcdn.com/brainbees/images/n/fc_logo.png" alt="logoimg"></a>
     </div>
     <div>
         <p>My Account</p>

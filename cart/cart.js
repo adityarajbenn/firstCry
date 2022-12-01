@@ -435,6 +435,8 @@ apply.onclick = ()=> {
         amount = ((amount*70) / 100).toFixed(2);
         document.getElementById('totalPrice').textContent = `₹${amount}`; 
         document.getElementById('payTotal').textContent = `₹${amount}`; 
+        document.getElementById('final').textContent = `₹${amount}`;       
+
     }
     couponCode.value = null;
 }
