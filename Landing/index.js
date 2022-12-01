@@ -1,5 +1,5 @@
 
-import {navbar,footer,getCart,displayData,removeData,navSlideIn,navSlideOut,loadEvent} from "./navbar.js";
+import {navbar,footer,getCart,displayData,removeData,loadEvent,navSlideIn,navSlideOut} from "./navbar.js";
 
 //get navbar
 let navbarCotainer =document.getElementById("navbar");

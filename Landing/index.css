@@ -95,7 +95,7 @@ li.midicon {
     text-align: center;
     text-transform: uppercase;
     cursor: pointer;
-    overflow: hidden;
+     overflow: hidden;
     display: block;
     padding: 15px 8px 15px 8px;
     font-family: roboto;
@@ -260,6 +260,16 @@ span.new {
 }
 .options2 >img{
   width: 85%;
+}
+
+#nav-btn {
+  display: none;
+}
+li.homesymbol {
+  display: none !important;
+}
+li.homeSymbol {
+  display: none !important;
 }
 /* Header CSS End   */
 
@@ -715,12 +725,6 @@ body{
 
 /* Footer Css end here   */
 
-#nav-btn {
-  display: none;
-}
-li.homesymbol {
-  display: none !important;
-}
 
 @media screen and (min-width:561px) and (max-width: 900px){
   #nav-btn {
@@ -736,12 +740,18 @@ li.homesymbol {
   background-color: white;
   left: -2000px;
   height: max-content;
-  width: 196px;
+  width: 243px;
 }
 #nav-icon {
   display: flex;
   flex-direction: column;
   margin-top: 10px;
+}
+#nav-icon div {
+  background-color: #333;
+  height: 2.1px;
+  width: 25px;
+  margin: 4px 20px 1px 15px;
 }
 .curser {
   display: none !important;
@@ -756,10 +766,11 @@ li.M14_42.mouse {
   margin-left: -28px;
 }
 .menu-container > ul > li {
-padding: 7px 39px 10px 10px
+padding: 7px 59px 10px 10px
 }
 .menu-container {
   background: #fff;
+  height: 7px;
 }
 #homePage {
   background-color: white;
@@ -776,6 +787,154 @@ padding: 7px 39px 10px 10px
   color: #333;
 }
 
+.logo_head {
+  padding-left: 165px;
+}
+#nav-btn {
+  margin-top: -48px;
+  position: absolute;
+}
+.slider {
+  margin-top: 80px;
+}
+#grid-block {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+  width: 93%;
+  margin: auto;
+}
+.footer-sticky {
+  width: 294px;
+  height: 415px;
+}
+#cpidParent {
+  width: 759px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+}
+
+
+
+@media screen and (min-width:0px) and (max-width: 560px){
+
+  #nav-btn {
+    display: inline-block;
+    background-color: white;
+    border: 0px;
+    margin-top: 6px;
+}
+#navlink {
+  display: inline-block;
+  position: absolute;
+  z-index: 1;
+  background-color: white;
+  left: -2000px;
+  height: max-content;
+  width: 243px;
+}
+#nav-icon {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+#nav-icon div {
+  background-color: #333;
+  height: 2.1px;
+  width: 25px;
+  margin: 4px 20px 1px 15px;
+}
+.curser {
+  display: none !important;
+}
+li.homesymbol {
+  display: block !important;
+}
+.fc_login{
+  display: none;
+}
+li.M14_42.mouse {
+  margin-left: -28px;
+}
+.menu-container > ul > li {
+padding: 7px 59px 10px 10px
+}
+.menu-container {
+  background: #fff;
+  height: 7px;
+}
+#homePage {
+  background-color: white;
+  border: 0px;
+  font-size: 21px;
+}
+#nav-close {
+  background-color: white;
+  border: 0px;
+  font-size: 21px;
+}
+#nav-link .homesymbol:hover {
+  background-color: rgb(255, 255, 255);
+  color: #333;
+}
+
+.logo_head {
+  padding-left: 74px;
+}
+input#search_box {
+  font-size: 8px;
+  width: 160px;
+}
+form.headSearchBox {
+  width: 189px;
+  height: 33px;
+}
+#nav-btn {
+  margin-top: -48px;
+  position: absolute;
+}
+.slider {
+  margin-top: 80px;
+}
+#grid-block {
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  gap: 20px;
+  width: 93%;
+  margin: auto;
+}
+.footer-sticky {
+  width: 294px;
+  height: 409px;
+}
+#cpidParent {
+  width: 395px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.tic{
+  width: 375px;
+}
+.footer_kid_store.sprite_footer_bg1 {
+  width: 300px;
+  right: 39px;
+}
+.liquid_header_main {
+  width: auto !important;
+  margin: -19px 7px !important;
+  display: flex;
+}
+.fc-footer{
+  height: 850px;
+}
+.footer_products_info1.sprite_footer_bg {
+  margin-left: 20px;
+}
+.rtb-img {
+  font-size: 10px;
+}
 
 }
 

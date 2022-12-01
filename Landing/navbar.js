@@ -27,7 +27,7 @@ let navbar = () =>{
     </div>
     </div>
     <div class="menu-container">
-                  <button onclick="navSlideOut()" id="nav-btn">
+                  <button id="nav-btn">
                     <div id="nav-icon">
                         <div></div>
                         <div></div>
@@ -38,7 +38,7 @@ let navbar = () =>{
             <li class="homesymbol"> 
             <button id="homePage" onclick= window.location.href="index.html" ><i class="fas fa-home"></i>
             </button>
-            <button id="nav-close" onclick="navSlideIn()" >   <i class="fas fa-times"></i> </button>
+            <button id="nav-close" >   <i class="fas fa-times"></i> </button>
             </li>
             <li class="M14_42 mouse"><a href=""> All Categories<span><i class="fa fa-angle-down"></i></span></a></li>
             <li class="M14_42 mouse"><a href="../details/proDetail.html"> BOY FASHION</a></li>
@@ -366,6 +366,15 @@ let loadEvent = () =>{
         removeData();
       });
   }
+
+  document.getElementById('nav-btn').addEventListener('click',()=>{
+    navSlideOut();
+});
+
+document.getElementById('nav-close').addEventListener('click',()=>{
+  navSlideIn();
+});
+
 }
 
 
@@ -378,4 +387,4 @@ function navSlideIn(){
 }
 
 
-export {navbar,footer,getCart,displayData,removeData,navSlideIn,navSlideOut,loadEvent};
+export {navbar,footer,getCart,displayData,removeData,loadEvent,navSlideOut,navSlideIn};
