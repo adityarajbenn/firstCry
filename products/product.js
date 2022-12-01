@@ -4,7 +4,7 @@ import {navbar, footer} from "./components/nav.js";
 
 document.querySelector('nav').innerHTML = navbar();
 document.querySelector('footer').innerHTML = footer();
-
+updateTot();
 
 async function tShirt(){
     let data = await fetchData();
@@ -86,7 +86,7 @@ function display(data){
                       cart.push(obj);
                       localStorage.setItem("cart", JSON.stringify(cart));
                   }
-                  
+                  updateTot();
                   // console.log(obj);
               };
             let btn2 = document.createElement("button");
@@ -133,7 +133,7 @@ function display(data){
             localStorage.setItem("product", JSON.stringify(obj));
             window.location.href = "details.html";
         }
-    })
+    });
 }
 
 function dataObj(id, url1, url2, url3, img1, title, desc, price, strikePrice, delivery, color, off){
@@ -364,4 +364,31 @@ function sortColor(c, val){
         display(tShirtData);
   }
   sort.selectedIndex = 0;
+}
+
+function updateTot(){
+    let productNo = JSON.parse(localStorage.getItem('cart'));
+    if(productNo != null) document.getElementById('productNo').textContent = productNo.length;
+    else document.getElementById('productNo').textContent = 0;
+    
+}
+
+let searchBox = document.getElementById('search_box');
+let searchBtn = document.getElementById('searchBtn');
+
+searchBtn.onclick = ()=> {
+    let val = searchBox.value;
+    let showData = JSON.parse(localStorage.getItem('tShirtData')) || [];
+    
+    let filteredData = showData.filter(({title})=> {
+        if(title.toLowerCase().includes(val.toLowerCase())) return true;
+    });
+
+    if(filteredData.length == 0) display(showData);
+    else display(filteredData);
+}
+
+let cartBtn = document.getElementById('cartBtn');
+cartBtn.onclick = ()=> {
+    window.location.href = '../cart/cart.html';
 }

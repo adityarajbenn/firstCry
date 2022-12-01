@@ -7,7 +7,7 @@ let navbar = () =>{
     <div class="fc_search">
         <form class="headSearchBox">
             <input type="text" name="" id="search_box" placeholder="Search for a Category, Brand or Product">
-            <span class="search-button"><i class="fa fa-magnifying-glass"></i></span>
+            <span class="search-button" id="searchBtn"><i class="fa fa-magnifying-glass"></i></span>
         </form>
     </div>
     <div class="fc_login">
@@ -19,7 +19,7 @@ let navbar = () =>{
         <li><span>FirstCry Parenting</span></li>
         <li><span>Login /</span><span> Register</span></li>
         <li><i class="fa-regular fa-heart"></i><span>  Shortlist</span></li>
-        <li class="midicon"><i class="fa-solid fa-cart-shopping"></i></i><span id="cart_c"></span></li>
+        <li class="midicon" id="cartBtn"><i class="fa-solid fa-cart-shopping"></i></i><span id="cart_c"></span> <span id="productNo">0</span></li>
        </ul>
     </div>
     </div>
