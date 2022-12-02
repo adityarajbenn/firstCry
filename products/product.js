@@ -6,6 +6,11 @@ document.querySelector('nav').innerHTML = navbar();
 document.querySelector('footer').innerHTML = footer();
 updateTot();
 
+// localStorage.setItem("name", "ALJITH");
+let userName = document.getElementById('userName');
+userName.innerHTML = localStorage.getItem("name") || "<span>Login /</span><span> Register</span>";
+
+
 async function tShirt(){
     let data = await fetchData();
     console.log(data);

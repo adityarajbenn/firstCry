@@ -20,10 +20,11 @@
     margin-left: 10px;
 }
 .logo_head{
-    padding: 15px 0 16px 43px;
+    padding: 15px 10px 16px 43px;
     margin: 0 auto;
     background-color: #fff !important;
     display: flex;
+    justify-content: space-between;
 }
 #search_box{
     height: 29px;
@@ -53,7 +54,9 @@
     margin-right: 10px;
 }
 .fc_login {
-    float: right;
+    /* float: right; */
+    display: flex;
+    justify-content: space-between;
     height: 34px;
     width: auto;
     /* margin-right: 20px; */
@@ -98,17 +101,18 @@ li.midicon {
     margin-top: -8px;
 }
 .menu-container > ul {
-    float: left;
     padding: 0 27px 0 46px;
     font-family: RobotoMB !important;
+    display: flex;
+    justify-content: space-between;
 }
 .menu-container > ul > li {
-    float: left;
+    /* float: left; */
+    display: flex;
     text-align: center;
     text-transform: uppercase;
     cursor: pointer;
     overflow: hidden;
-    display: block;
     padding: 15px 8px 15px 8px;
     font-family: roboto;
     font-size: 14px !important;
