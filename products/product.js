@@ -137,7 +137,7 @@ function display(data){
         imgDiv.onclick = ()=> {
             let obj = new dataObj(id, url1, url2, url3, img1, title, desc, price, strikePrice, delivery, color);
             localStorage.setItem("product", JSON.stringify(obj));
-            window.location.href = "details.html";
+            window.location.href = "../details/proDetail.html";
         }
     });
 }
