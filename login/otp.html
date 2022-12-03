@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Page</title>
+    <link rel="stylesheet" href="otp.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="icon" href="https://play-lh.googleusercontent.com/MnuZ2c-iJgXdlyjs1lMAzBR6meMfkSBmPAebq9LGnVi83NNGpd0dPMGS5sJQS_EO_w" type="image/x-icon">
+</head>
+<body>
+
+    <div id="logo">
+        <img src="https://cdn.fcglcdn.com/brainbees/images/n/fc-logo-s.jpg" alt="logo">
+    </div>
+    <div id="parent" >
+        <h2><a href="signIn.html"><span  class="material-symbols-outlined">
+            arrow_back_ios
+            </span></a>Register</h2>
+        <form action="" id="form">
+           
+            <label for="">OTP Number.</label><br>
+            <input type="number" id="otp"   placeholder="Enter Your 4 digit otp Number" ><br>
+           
+
+           
+     
+        <input  type="submit" value="CONTINUE" id="signup" >
+        <p>By continuing, you agree to Firstcry's <a style="text-decoration: none;" href="https://www.firstcry.com/termsofuse">Condition of use</a><br>
+            and <a style="text-decoration: none;" href="https://www.firstcry.com/privacypolicy">privacy notice</a></p>
+        
+       
+        
+    </form>
+    
+
+    </div>
+   
+
+</body>
+
+</html>
+<script >
+    document.getElementById("form").addEventListener("submit",otp);
+    let see=1234;
+    function otp(){
+        event.preventDefault();
+        var seeagain=document.getElementById("otp").value;
+        if(see==seeagain){
+            alert("login succesfully")
+            window.location.href = "../Landing/index.html";
+            
+            
+        }
+        else{
+            alert("Wrong Otp")
+        }
+    }
+</script>
