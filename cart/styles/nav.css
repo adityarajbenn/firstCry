@@ -1,0 +1,27 @@
+/* Header CSS Starts here */
+
+#logo-container{
+    padding: 10px 15px;
+    background-color: #fff ;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo-container > div:first-child{
+    display: flex;
+    align-items: center;
+}
+
+#logo-container > div:last-child{
+    display: flex;
+    align-items: center;
+}
+
+#logo-container > div:last-child p{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.678);
+}
+
+
+
+/* Header CSS End   */

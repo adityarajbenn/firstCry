@@ -1,0 +1,65 @@
+@media screen and (min-width:561px) and (max-width: 900px){
+    #container{
+        width: 90%;
+        margin: auto;
+    }
+
+    #parts{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #productDiv{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cartDiv{
+        visibility: visible;
+    }
+}
+
+@media screen and (min-width:0px) and (max-width: 560px){
+    #container{
+        width: 95%;
+        margin: auto;
+    }
+
+    #parts{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #productDiv{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .cartDiv{
+        visibility: visible;
+    }
+
+    #placeOrder{
+        grid-template-columns: 1fr;
+    }
+
+    #placeOrder #method{
+        display: none;
+    }
+
+    #payMethod{
+        width: 400px;
+    }
+
+    .product .size{
+        display: none;
+    }
+
+    .product .delivery{
+        display: none;
+    }
+
+    .product .clubPrice{
+        display: none;
+    }
+
+    .product .taxP{
+        display: none;
+    }
+}
