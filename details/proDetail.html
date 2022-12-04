@@ -7,287 +7,268 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://play-lh.googleusercontent.com/MnuZ2c-iJgXdlyjs1lMAzBR6meMfkSBmPAebq9LGnVi83NNGpd0dPMGS5sJQS_EO_w" type="image/x-icon">
     <script src="https://kit.fontawesome.com/db9fa2d8fb.js" crossorigin="anonymous"></script>   
+    <link rel="stylesheet" href="../products/styles/nav.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="proDetail.css">
+    
     <title>Product-Detail</title>
 </head>
 <body>
     <!-- Navbar place -->
-    <div id="navbar"></div>
+     <nav></nav>
 
-
-    <!-- Product location -->
+    
+<!-- full Body -->
+<div id="fullBody">
+        <!-- Product location -->
     <div id="location">
         <a href="">Home / </a>
         <a href="">Clothes & Shoes / </a>
         <a href="">Tops and T-shirts / </a>
-        <a href="" id="productName">Babyhug Cotton knit Full Sleevees T-shirt Striped</a>
+        <a href="" id="productName"></a>
     </div>
-
-    <!-- Product display -->
-    <div id="parentDisplay">
-        <div id="childDisplay">
-            <div id="subChild">
-                <div id="subJunior">
-                    <div id="sideImages"></div>
-                    <div id="bigImage"></div>
-                </div>
-            </div>
-                
+    
+        <!-- Product display -->
+        <div id="fullPage">
+            <img id="fullPageImage" src="" alt="">
         </div>
-        <div id="productDetail">
-            <div id="one">
+        <div id="parentDisplay">
+            <div id="childDisplay">
+                <div id="subChild">
+                    <div id="subJunior">
+                        <div id="sideImages"></div>
+                        <div id="bigImage"></div>
+                    </div>
+                </div>
+                    
             </div>
-            <hr>
-            <div id="two">
-                <div id="two1">
-                    <h3 ><span>&#x20B9</span><span id="priceHead"></span></h3>
-                    <h3> MRP: <s><span>&#x20B9</span><span id="MRP"></span></s></h3>
-                    <h3 id="discountText"></h3>
-                    <h4>Earn Loyalty Cash: 2</h4>
-                </div>
-                <div id="two2">
-                    <p>MRP incl. all taxes, Add'l charges may apply on discounted price</p>
-                </div>
-                <div id="two3">
-                    <img src="https://cdn.fcglcdn.com/brainbees/images/pdpcl_club_logo_desktop.jpg" alt="">
-                    <div id="two31">
-                        <p>Save <span>&#x20B9 20.20</span> with Club</p>
-                        <h4><b>Club Price : &#x20B9 <span id="clubPrice">530.01</span> </b></h4>
-                    </div>
-                    <p><b>Join Now ></b></p>
-                </div>
-                <h3 id="scale">SIZE CHART <i class="fa-solid fa-ruler-horizontal"></i></h3>
-                <div id="colorBox">
-                    <h4>COLOR</h4>
-                    <div id="colorBoxIn"></div>
-                </div>
-                <div id="two4">
-                    <h4>SIZE</h4>
-                    <div id="two41">
-                        <div id="1" onclick="sizeData(1)"><h4 >3 - 6 M</h4>
-                        </div>
-                        <div id="2" onclick="sizeData(2)">
-                            <h4 >6 - 9 M</h4></div>
-                        <div class="defaultDiv" id="3" onclick="sizeData(3)">
-                            <h4 >9 - 12 M</h4></div>
-                        <div id="4" onclick="sizeData(4)">
-                            <h4 >12 - 18 M</h4></div>
-                        <div id="5" onclick="sizeData(5)">
-                            <h4 >12 - 18 M</h4></div>
-                        <div id="6" onclick="sizeData(6)">
-                            <h4 >2 - 3 Y</h4></div>
-                        <div id="7" onclick="sizeData(7)">
-                            <h4>3 - 4 Y</h4></div>
-                        <div id="8"  onclick="sizeData(8)">
-                            <h4>4 - 5 Y</h4></div>
-                        <div id="9" onclick="sizeData(9)">
-                            <h4>5 - 6 Y</h4></div>
-                    </div>
-                </div>
-                <div id="sizingTip">
-                    <h4><b>SIZING TIP:</b></h4>
-                    <p>We recommend this size for child weighing between</p> 
-                    <h4><b><span id="weightValue">8.9 - 9.6 Kgs</span></b></h4>
+            <div id="productDetail">
+                <div id="one">
                 </div>
                 <hr>
-                <div id="bestOffers">
-                    <i class="fa-solid fa-tag"></i> <h4>BEST OFFERS</h4>
-                </div>
-                <div id="codeBoxes">
-                    <div id="codeBoxOne">
-                        <div id="offerOne"><h3>Offers</h3></div>
-                        <div id="codeBoxInsideOne">
-                            <div id="offerCodeOne">
-                                <p>Use code: </p>
-                                <h3>WINFSH</h3>
+                <div id="two">
+                    <div id="two1">
+                        <h3 ><span>&#x20B9</span><span id="priceHead"></span></h3>
+                        <h3> MRP: <s><span>&#x20B9</span><span id="MRP"></span></s></h3>
+                        <h3 id="discountText"></h3>
+                        <h4>Earn Loyalty Cash: 2</h4>
+                    </div>
+                    <div id="two2">
+                        <p>MRP incl. all taxes, Add'l charges may apply on discounted price</p>
+                    </div>
+                    <div id="two3">
+                        <img src="https://cdn.fcglcdn.com/brainbees/images/pdpcl_club_logo_desktop.jpg" alt="">
+                        <div id="two31">
+                            <p>Save <span>&#x20B9 20.20</span> with Club</p>
+                            <h4><b>Club Price : &#x20B9 <span id="clubPrice">530.01</span> </b></h4>
+                        </div>
+                        <p><b>Join Now ></b></p>
+                    </div>
+                    <h3 id="scale">SIZE CHART <i class="fa-solid fa-ruler-horizontal"></i></h3>
+                    <div id="colorBox">
+                        <h4>COLOR</h4>
+                        <div id="colorBoxIn"></div>
+                    </div>
+                    <div id="two4">
+                        <h4>SIZE</h4>
+                        <div id="two41">
+                            <div id="first"><h4 >3 - 6 M</h4>
                             </div>
-                            <div id="howMuchDis">
-                                <div id="imageOffer">
-                                    <img src="https://cdn.fcglcdn.com/brainbees/images/pdpcl_club_logo_desktop.jpg" alt="">
-                                    <h3>Flat 40% Off* for Club Users</h3>
+                            <div id="second">
+                                <h4 >6 - 9 M</h4></div>
+                            <div class="defaultDiv" id="third">
+                                <h4 >9 - 12 M</h4></div>
+                            <div id="forth">
+                                <h4 >12 - 18 M</h4></div>
+                            <div id="fifth">
+                                <h4 >12 - 18 M</h4></div>
+                            <div id="sixth">
+                                <h4 >2 - 3 Y</h4></div>
+                            <div id="seventh">
+                                <h4>3 - 4 Y</h4></div>
+                            <div id="eighth" >
+                                <h4>4 - 5 Y</h4></div>
+                            <div id="ninth">
+                                <h4>5 - 6 Y</h4></div>
+                        </div>
+                    </div>
+                    <div id="sizingTip">
+                        <h4><b>SIZING TIP:</b></h4>
+                        <p>We recommend this size for child weighing between</p> 
+                        <h4><b><span id="weightValue">8.9 - 9.6 Kgs</span></b></h4>
+                    </div>
+                    <hr>
+                    <div id="bestOffers">
+                        <i class="fa-solid fa-tag"></i> <h4>BEST OFFERS</h4>
+                    </div>
+                    <div id="codeBoxes">
+                        <div id="codeBoxOne">
+                            <div id="offerOne"><h3>Offers</h3></div>
+                            <div id="codeBoxInsideOne">
+                                <div id="offerCodeOne">
+                                    <p>Use code: </p>
+                                    <h3>WINFSH</h3>
                                 </div>
-                                <hr>
-                                <h3>Flat 35% Off* for All Users </h3>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div id="codeBoxTwo">
-                        <div id="offer"><h3>Offers</h3></div>
-                        <div id="codeBoxInside">
-                            <div id="offerCode">
-                                <p>Use code: </p>
-                                <h3>BUYNOW</h3>
-                            </div>
-                            <div id="howMuchDis">
-                                <div id="imageOffer">
-                                    <img src="https://cdn.fcglcdn.com/brainbees/images/pdpcl_club_logo_desktop.jpg" alt="">
-                                    <h3>SITEWIDE - CLUB - Flat 40% Off*</h3>
+                                <div id="howMuchDis">
+                                    <div id="imageOffer">
+                                        <img src="https://cdn.fcglcdn.com/brainbees/images/pdpcl_club_logo_desktop.jpg" alt="">
+                                        <h3>Flat 40% Off* for Club Users</h3>
+                                    </div>
+                                    <hr>
+                                    <h3>Flat 35% Off* for All Users </h3>
                                 </div>
-                                <hr>
-                                <h3>SITEWIDE - All Users - Flat 35% Off </h3>
                             </div>
+                            
                         </div>
-                        
-                    </div>
-                </div>
-                <hr>
-                <h3>FIRSTCRY CLUB BENEFITS</h3>
-                <div id="benefits">
-                    <div>
-                        <img src="https://cdn.fcglcdn.com/brainbees/images/club_member.webp" alt="">
-                        <p>Exclusiv Offers & Discounts</p>
-                    </div>
-                    <div>
-                        <img src="https://cdn.fcglcdn.com/brainbees/images/price_benefit_member.webp" alt="">
-                        <p>Lower Prices on products</p>
-                    </div>
-                    <div>
-                        <img src="https://cdn.fcglcdn.com/brainbees/images/earn_loyalty_cash.webp" alt="">
-                        <p>Loyalty Cash Points</p>
-                    </div>
-                    <div>
-                        <img src="https://cdn.fcglcdn.com/brainbees/images/baby_gear_assembly.webp" alt="">
-                        <p>Free baby gear assembly</p>
-                    </div>
-                    <div>
-                        <img src="https://cdn.fcglcdn.com/brainbees/images/lower_shipping_barrier.webp" alt="">
-                        <p>Lower shipping barrier</p>
-                    </div>
-                </div>
-                <hr>
-                <div id="pincodeCheckerBefore">
-                    <div id="leftSide">
-                        <h3>Enter pincode</h3>
-                        <input type="number" name="" id="pincode" placeholder="ENTER PIN CODE">
-                    </div>
-                    <div id="rightSide">
-                        <i class="fa-solid fa-rotate-left"></i>
-                        <p>10 Days Return or Exchange</p>
-                    </div>
-                </div>
-                <div id="pincodeCheckerAfter">
-                    <div id="leftPincodeBox">
-                        <div id="truck">
-                            <i class="fa-solid fa-truck"></i>
-                            <H3>TENTATIVE DELIVERY</H3>
+                        <div id="codeBoxTwo">
+                            <div id="offer"><h3>Offers</h3></div>
+                            <div id="codeBoxInside">
+                                <div id="offerCode">
+                                    <p>Use code: </p>
+                                    <h3>BUYNOW</h3>
+                                </div>
+                                <div id="howMuchDis">
+                                    <div id="imageOffer">
+                                        <img src="https://cdn.fcglcdn.com/brainbees/images/pdpcl_club_logo_desktop.jpg" alt="">
+                                        <h3>SITEWIDE - CLUB - Flat 40% Off*</h3>
+                                    </div>
+                                    <hr>
+                                    <h3>SITEWIDE - All Users - Flat 35% Off </h3>
+                                </div>
+                            </div>
+                            
                         </div>
-                        <div id="afterPincode">Get it by Friday, Dec 02 <a href="" id="pincodeEnter"></a></div>
                     </div>
-                    <div id="rightPincodeBox">
-                        <div id="cod">
-                            <i class="fa-regular fa-money-bill-1"></i>
-                            <p>Cash on Delivery Available</p>
+                    <hr>
+                    <h3>FIRSTCRY CLUB BENEFITS</h3>
+                    <div id="benefits">
+                        <div>
+                            <img src="https://cdn.fcglcdn.com/brainbees/images/club_member.webp" alt="">
+                            <p>Exclusiv Offers & Discounts</p>
                         </div>
-                        <div id="returnPolicy">
+                        <div>
+                            <img src="https://cdn.fcglcdn.com/brainbees/images/price_benefit_member.webp" alt="">
+                            <p>Lower Prices on products</p>
+                        </div>
+                        <div>
+                            <img src="https://cdn.fcglcdn.com/brainbees/images/earn_loyalty_cash.webp" alt="">
+                            <p>Loyalty Cash Points</p>
+                        </div>
+                        <div>
+                            <img src="https://cdn.fcglcdn.com/brainbees/images/baby_gear_assembly.webp" alt="">
+                            <p>Free baby gear assembly</p>
+                        </div>
+                        <div>
+                            <img src="https://cdn.fcglcdn.com/brainbees/images/lower_shipping_barrier.webp" alt="">
+                            <p>Lower shipping barrier</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div id="pincodeCheckerBefore">
+                        <div id="leftSide">
+                            <h3>Enter pincode</h3>
+                            <input type="number" name="" id="pincode" placeholder="ENTER PIN CODE">
+                        </div>
+                        <div id="rightSide">
                             <i class="fa-solid fa-rotate-left"></i>
                             <p>10 Days Return or Exchange</p>
                         </div>
                     </div>
-                </div>
-                <hr>
-                <div id="sizeFit">
-                        <h3>SIZE & FIT INFORMATION</h3>
-                    <div id="ageDiv">
-                        <p>Age</p>
-                        <p id="ageData">9 - 12 M</p>
+                    <div id="pincodeCheckerAfter">
+                        <div id="leftPincodeBox">
+                            <div id="truck">
+                                <i class="fa-solid fa-truck"></i>
+                                <H3>TENTATIVE DELIVERY</H3>
+                            </div>
+                            <div id="afterPincode"><span id="deliveryDate"></span> <a href="" id="pincodeEnter"></a></div>
+                        </div>
+                        <div id="rightPincodeBox">
+                            <div id="cod">
+                                <i class="fa-regular fa-money-bill-1"></i>
+                                <p>Cash on Delivery Available</p>
+                            </div>
+                            <div id="returnPolicy">
+                                <i class="fa-solid fa-rotate-left"></i>
+                                <p>10 Days Return or Exchange</p>
+                            </div>
+                        </div>
                     </div>
                     <hr>
-                    <div id="weightDiv">
-                        <p>Ideal Weight (Kgs)</p>
-                        <p class="weightValue">8.9 - 9.6</p>
+                    <div id="sizeFit">
+                            <h3>SIZE & FIT INFORMATION</h3>
+                        <div id="ageDiv">
+                            <p>Age</p>
+                            <p id="ageData">9 - 12 M</p>
+                        </div>
+                        <hr>
+                        <div id="weightDiv">
+                            <p>Ideal Weight (Kgs)</p>
+                            <p class="weightValue">8.9 - 9.6</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-                
-            </div>
-    </div>
-    <hr>
-    <div id="youMayLike">
-        <h3>YOU MAY ALSO LIKE</h3>
-        <div id="ymalItems">
-            
-            <div>
-                <img src="https://cdn.fcglcdn.com/brainbees/images/products/219x265/12243076a.webp" alt="">
-                <p>Babyhug Cotton Knit Full Sleevers Striped</p>
-                <div id="ymlPrices">
-                    <h4><b>552.21</b></h4>
-                    <h4><b><s>699.99</s></b></h4>
-                    <h4 id="discount">(21% Off)</h4>
+                    
                 </div>
-            </div>
-            <div>
-                <img src="https://cdn.fcglcdn.com/brainbees/images/products/219x265/12243076a.webp" alt="">
-                <p>Babyhug Cotton Knit Full Sleevers Striped</p>
-                <div id="ymlPrices">
-                    <h4><b>552.21</b></h4>
-                    <h4><b><s>699.99</s></b></h4>
-                    <h4 id="discount">(21% Off)</h4>
-                </div>
-            </div>
-            <div>
-                <img src="https://cdn.fcglcdn.com/brainbees/images/products/219x265/12243076a.webp" alt="">
-                <p>Babyhug Cotton Knit Full Sleevers Striped</p>
-                <div id="ymlPrices">
-                    <h4><b>552.21</b></h4>
-                    <h4><b><s>699.99</s></b></h4>
-                    <h4 id="discount">(21% Off)</h4>
-                </div>
-            </div>
-            <div>
-                <img src="https://cdn.fcglcdn.com/brainbees/images/products/219x265/12243076a.webp" alt="">
-                <p>Babyhug Cotton Knit Full Sleevers Striped</p>
-                <div id="ymlPrices">
-                    <h4><b>552.21</b></h4>
-                    <h4><b><s>699.99</s></b></h4>
-                    <h4 id="discount">(21% Off)</h4>
-                </div>
-            </div>
-            <div>
-                <img src="https://cdn.fcglcdn.com/brainbees/images/products/219x265/12243076a.webp" alt="">
-                <p>Babyhug Cotton Knit Full Sleevers Striped</p>
-                <div id="ymlPrices">
-                    <h4><b>552.21</b></h4>
-                    <h4><b><s>699.99</s></b></h4>
-                    <h4 id="discount">(21% Off)</h4>
-                </div>
-            </div>
-        </div>
-    </div>
-        <hr>
-        <div id="feedbackDiv">
-            <div id="feedbackItem">
-                <i class="fa-regular fa-comment"></i>
-            </div>
-            <div id="feebackText">
-                <h3>FEEDBACK</h3>
-                <h4>Tell us if we missed any relevant information on the product?</h4>
-            </div>
-        </div>
-        <div id="feedbackInput">
-            <input type="text" placeholder="e.g Product Weight, Dimensions, Material etc">
-            <button>SUBMIT</button>
-        </div>
-
-        <div id="confidence">
-            <h3>SHOP WITH CONFIDENCE</h3>
-            <div>
-                <img src="//cdn.fcglcdn.com/brainbees/images/hfr.svg">
-                <h3>Hassel Free Returns or Exchange</h3>
-            </div>
-            <div>
-                <img src="//cdn.fcglcdn.com/brainbees/images/hpp.svg">
-                <h3>Handpicked Products</h3>
-            </div>
-            <div>
-                <img src="//cdn.fcglcdn.com/brainbees/images/ezr.svg">
-                <h3>EZ Returns or Exchange</h3>
-            </div>
         </div>
         <hr>
-    <!-- </div> -->
+        <div id="youMayLike">
+            <h3>YOU MAY ALSO LIKE</h3>
+            <div id="parentYMAL">
+                <div class="arrow" id="leftArrow"><span class="material-symbols-outlined">
+                    arrow_back_ios
+                    </span></div>
+                <div id="ymalItems">
+                    <!-- <div>
+                        <img src="https://cdn.fcglcdn.com/brainbees/images/products/219x265/12243076a.webp" alt="">
+                        <p>Babyhug Cotton Knit Full Sleevers Striped</p>
+                        <div id="ymlPrices">
+                            <h4><b>552.21</b></h4>
+                            <h4><b><s>699.99</s></b></h4>
+                            <h4 id="discount">(21% Off)</h4>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="arrow" id="rightArrow"><span class="material-symbols-outlined">
+                    arrow_forward_ios
+                    </span></div>
+            </div>
+        </div>
+            <hr>
+            <div id="feedbackDiv">
+                <div id="feedbackItem">
+                    <i class="fa-regular fa-comment"></i>
+                </div>
+                <div id="feebackText">
+                    <h3>FEEDBACK</h3>
+                    <h4>Tell us if we missed any relevant information on the product?</h4>
+                </div>
+            </div>
+            <div id="feedbackInput">
+                <input type="text" placeholder="e.g Product Weight, Dimensions, Material etc">
+                <button>SUBMIT</button>
+            </div>
     
+            <div id="confidence">
+                <h3>SHOP WITH CONFIDENCE</h3>
+                <div>
+                    <img src="//cdn.fcglcdn.com/brainbees/images/hfr.svg">
+                    <h3>Hassel Free Returns or Exchange</h3>
+                </div>
+                <div>
+                    <img src="//cdn.fcglcdn.com/brainbees/images/hpp.svg">
+                    <h3>Handpicked Products</h3>
+                </div>
+                <div>
+                    <img src="//cdn.fcglcdn.com/brainbees/images/ezr.svg">
+                    <h3>EZ Returns or Exchange</h3>
+                </div>
+            </div>
+            <hr>
+        <!-- </div> -->
+        <footer></footer>
+</div>    
 </body>
 </html>
-<script src="proDetail.js"></script>
+<script src="proDetail.js" type="module"></script>
