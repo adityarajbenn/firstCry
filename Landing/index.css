@@ -18,6 +18,7 @@ body,* {
     margin: 0 auto;
     background-color: #fff !important;
     display: flex;
+    justify-content: space-between;
 }
 #search_box{
     height: 29px;
@@ -34,7 +35,7 @@ body,* {
 }
 #navbar{
   position: fixed;
-  z-index: 1;  
+  z-index: 11;  
   width: 100%; 
   top: 0px;
 }
@@ -46,13 +47,20 @@ body,* {
     cursor: pointer;
 }
 .fc_login {
-    float: right;
+    /* float: right; */
+    /* display: flex; */
+    
     height: 34px;
     width: auto;
     margin-right: 20px;
 }
+.fc_login >ul{
+  display: flex;
+  justify-content: space-between;
+}
 .fc_login >ul >li{
-    float: left;
+    /* float: left; */
+    /* display: flex; */
     text-align: center;
     cursor: pointer;
     padding: 0 5px;
@@ -73,10 +81,15 @@ li.midicon {
     margin-top: -5px;
     border: none !important
 }
+i.fa.fa-magnifying-glass {
+  color: #ff7043;
+}
 #cart_c{
     padding-left: 4px;
-    font-size: 18px;
-    color: #000;
+    font-size: 22px;
+    color: rgb(255, 128, 0);
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
 }
 .menu-container {
     height: 50px;
@@ -86,12 +99,16 @@ li.midicon {
     margin-top: -8px;
 }
 .menu-container > ul {
-    float: left;
+    /* float: left; */
+    display: flex;
+    justify-content: space-between;
     padding: 0 27px 0 46px;
     font-family: RobotoMB !important;
 }
 .menu-container > ul > li {
-    float: left;
+    /* float: left; */
+    display: flex;
+    justify-content: space-between;
     text-align: center;
     text-transform: uppercase;
     cursor: pointer;
@@ -813,6 +830,12 @@ padding: 7px 59px 10px 10px
   margin-left: auto !important;
   margin-right: auto !important;
 }
+#footer {
+  display: none;
+}
+.slider {
+  display: none;
+}
 
 }
 
@@ -820,7 +843,7 @@ padding: 7px 59px 10px 10px
 
 @media screen and (min-width:0px) and (max-width: 560px){
 
-  #nav-btn {
+   #nav-btn {
     display: inline-block;
     background-color: white;
     border: 0px;
@@ -934,6 +957,12 @@ form.headSearchBox {
 }
 .rtb-img {
   font-size: 10px;
+}
+#footer {
+  display: none;
+}
+.slider {
+  display: none;
 }
 
 }

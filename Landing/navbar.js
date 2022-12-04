@@ -4,12 +4,12 @@ let navbar = () =>{
     <div id="logo-container">
     <div class="logo_head">
     <div class="fc_logo">
-        <a href=""><img class="header_logo" src="https://cdn.fcglcdn.com/brainbees/images/n/fc_logo.png" alt="logoimg"></a>
+        <a href="../Landing/index.html"><img class="header_logo" src="https://cdn.fcglcdn.com/brainbees/images/n/fc_logo.png" alt="logoimg"></a>
     </div>
     <div class="fc_search">
         <form class="headSearchBox">
             <input type="text" name="" id="search_box" placeholder="Search for a Category, Brand or Product">
-            <span class="search-button"><i class="fa fa-magnifying-glass"></i></span>
+            <span class="search-button" id="searchBtn"><i class="fa fa-magnifying-glass"></i></span>
         </form>
     </div>
     <div class="fc_login">
@@ -19,9 +19,9 @@ let navbar = () =>{
         <li><span>Support</span></li>
         <li><span>Track Order</span></li>
         <li><span>FirstCry Parenting</span></li>
-        <li><span>Login /</span><span> Register</span></li>
+        <li id="userName"><span><a href=../login/login.html>Login</a> /</span><span><a href="../login/signIn.html"> Register</a></span></li>
         <li><i class="fa-regular fa-heart"></i><span>  Shortlist</span></li>
-        <li class="midicon"><i class="fa-solid fa-cart-shopping"></i></i><span id="cart_c"></span></li>
+        <li class="midicon"><a href="../cart/cart.html"><i class="fa-solid fa-cart-shopping"></i><span id="cart_c"></span></a></li>
        </ul>
     </div>
     </div>
@@ -41,7 +41,7 @@ let navbar = () =>{
             <button id="nav-close" >   <i class="fas fa-times"></i> </button>
             </li>
             <li class="M14_42 mouse"><a href=""> All Categories<span><i class="fa fa-angle-down"></i></span></a></li>
-            <li class="M14_42 mouse"><a href="../details/proDetail.html"> BOY FASHION</a></li>
+            <li class="M14_42 mouse"><a href="../products/product.html"> BOY FASHION</a></li>
             <li class="M14_42 mouse"><a href=""> GIRL FASHION</a></li>
             <li class="M14_42 mouse"><a href=""> Footwear</a></li>
             <li class="M14_42 mouse"><a href=""> Toys</a></li>
@@ -88,7 +88,7 @@ let navbar = () =>{
               <ul class="col-one">
                 <li class="shopchoic spacedown "><a href="" class="B14_42">Shop By Category</a></li>
                 <li class="shop_text"><a href="" class="M13_75">Sets & Suits</a></li>
-                <li><a href="../details/proDetail.html" class="M13_75">T-shirts</a></li>
+                <li><a href="../products/product.html" class="M13_75">T-shirts</a></li>
                 <li><a href="" class="M13_75">Shirts</a></li>
                 <li><a href="" class="M13_75">Jeans & Trousers</a></li>
                 <li><a href="" class="M13_75">Sweatshirts</a><span class="new"> NEW</span></li>
@@ -267,11 +267,11 @@ let footer = () =>{
           </div>
           <div class="hdr">CONNECT WITH US</div>
           <div id="socialicons">
-            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-twitter"></i></a>
-            <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
-            <a href=""><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.facebook.com/FirstCryIndia/"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/firstcryindia/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com/firstcryindia"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.pinterest.com/firstcryindia/"><i class="fa-brands fa-pinterest-p"></i></a>
+            <a href="https://www.youtube.com/channel/UCXQjmZLatydSOHhbOA8-kqw"><i class="fa-brands fa-youtube"></i></a>
         </div>
         <div class="lcr cnt gcnew">
         <span><a href="">Testimonials</a></span>
@@ -329,13 +329,11 @@ let footer = () =>{
 
 
 let getCart = () =>{
-  var cartItems = JSON.parse(localStorage.getItem("cart")) || []
-  var items =  cartItems.length
-  console.log(items)
-  if(items>0){
-     document.getElementById("cart_c").innerHTML = items;
-  }
   
+    let cartItems = JSON.parse(localStorage.getItem('cart'));
+    if(cartItems != null) document.getElementById('cart_c').textContent = cartItems.length;
+    else document.getElementById('cart_c').textContent = 0;
+    
 }
 // getCart();
 

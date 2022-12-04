@@ -9,10 +9,29 @@ navbarCotainer.innerHTML=navbar();
 let navbarCotainer2 =document.getElementById("footer");
 navbarCotainer2.innerHTML=footer();
 
+let userName = document.getElementById('userName');
+userName.innerHTML = localStorage.getItem("name") || "<span><a href=../login/login.html>Login</a> /</span><span><a href=../login/signIn.html> Register</a></span>"
+
 //count add to cart
 getCart();
 
 loadEvent();
+
+
+let searchBox = document.getElementById('search_box');
+let searchBtn = document.getElementById('searchBtn');
+
+// searchBtn.onclick = ()=> {
+//     let val = searchBox.value;
+//     let showData = JSON.parse(localStorage.getItem('tShirtData')) || [];
+    
+//     let filteredData = showData.filter(({title})=> {
+//         if(title.toLowerCase().includes(val.toLowerCase())) return true;
+//     });
+
+//     // if(filteredData.length == 0) display(showData);
+//     // else display(filteredData);
+// }
 
 
 var productData = [
