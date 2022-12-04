@@ -399,3 +399,7 @@ let cartBtn = document.getElementById('cartBtn');
 cartBtn.onclick = ()=> {
     window.location.href = '../cart/cart.html';
 }
+
+let pinCode = document.getElementById('pinCode');
+let pin = localStorage.getItem('pin') || " ";
+pinCode.innerText = pin;
