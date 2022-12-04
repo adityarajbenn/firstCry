@@ -1,0 +1,560 @@
+/* Header CSS Starts here */
+
+#productNo{
+  font-size: 22px;
+  color: rgb(255, 128, 0);
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+}
+
+.headSearchBox {
+    border: 1px solid rgb(238, 238, 238);
+    border-radius: 5px;
+    background-color: #fff;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.fc_search {
+    margin-left: 10px;
+}
+.logo_head{
+    padding: 15px 10px 16px 43px;
+    margin: 0 auto;
+    background-color: #fff !important;
+    display: flex;
+    justify-content: space-between;
+}
+#search_box{
+    height: 29px;
+    text-align: left;
+    color: #676767;
+    line-height: 30px;
+    padding: 0 20px 0 10px;
+    border: 1px solid #fff !important;
+    border-radius: 5px;
+    margin: 2px;
+    font-size: 13px;
+    width: 230px;
+    outline: none;
+}
+#navbar{
+  position: fixed;
+  z-index: 1;  
+  width: 100%; 
+  top: 0px;
+}
+.search-button {
+    color: #ff7043;
+    font-size: 16px;
+    right: 8px;
+    top: 10px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.fc_login {
+    /* float: right; */
+    display: flex;
+    justify-content: space-between;
+    height: 34px;
+    width: auto;
+    /* margin-right: 20px; */
+}
+.fc_login >ul >li{
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    padding: 0 5px;
+    border-right: 1px solid #d4d4d4;
+    list-style: none;
+}
+.fc_login {
+    font-family: robotoMB;
+    font-size: 14px !important;
+    color: #616161;
+    line-height: 17px;
+    /* margin-left: 39px; */
+}
+
+.fc_login >ul{
+    margin: 0;
+}
+
+i.fa-solid.fa-cart-shopping {
+    font-size: 26px;
+}
+li.midicon {
+    margin-top: -5px;
+    border: none !important
+}
+#cart_c{
+    padding-left: 4px;
+    font-size: 18px;
+    color: #000;
+}
+.menu-container {
+    height: 50px;
+    width: 100%;
+    background-color: #ffd91c;
+    z-index: 10;
+    margin-top: -8px;
+}
+.menu-container > ul {
+    padding: 0 27px 0 46px;
+    font-family: RobotoMB !important;
+    display: flex;
+    justify-content: space-between;
+}
+.menu-container > ul > li {
+    /* float: left; */
+    display: flex;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    overflow: hidden;
+    padding: 15px 8px 15px 8px;
+    font-family: roboto;
+    font-size: 14px !important;
+    color: #424242 !important;
+    line-height: 20px;
+}
+a {
+    text-decoration: none;
+}
+.menu-container > ul > li.carters {
+    padding: 0 0 0 8px;
+}
+.menu-container > ul > li.carters img {
+    width: 86px;
+}
+.menu-container > ul > li > a > span {
+    vertical-align: middle !important;
+    margin-left: 8px;
+    font-size: 18px;
+}
+
+.fc_login > ul {
+    padding-top: 8px;
+    height: 34px;
+}
+a{
+  color: #575757 !important;
+}
+
+.M14_42:hover{
+  background-color: #fff;
+}
+#navlink >li :hover{
+  
+  cursor: pointer;
+  color: #424242;
+  display: block;
+  text-decoration: none;
+  z-index: 5px;
+}
+li.allcat >a , .B14_42 > a {
+  text-decoration: none;
+}
+ul.col-one li > a {
+  text-decoration: none;
+}
+ul li.hactive > a {
+  text-decoration: none;
+}
+.mouse{
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+}
+.curser{
+  width: 100%;
+  margin: auto;
+  display: none;
+  cursor: pointer;
+}
+.curser>div{
+  margin: auto;
+}
+.all-category-container {
+  background-color: #fff;
+    position: absolute;
+    width: 240px;
+    z-index: 2;
+    height: 375%;
+}
+.all-category-container1 {
+  background-color: #fff;
+    position: absolute;
+    width: 240px;
+    z-index: 2;
+    left: 237px;
+    height: 375%;
+}
+.all-category-container2{
+  background-color: #fff;
+  position: absolute;
+  width: 240px;
+  z-index: 2;
+  left: 450px;
+  height: 375%;
+}
+.all-category-container3{
+  background-color: #fff;
+  position: absolute;
+  width: 240px;
+  z-index: 2;
+  left: 675px;
+  height: 375%;
+}
+.all-category-container4{
+  background-color: #fff;
+  position: absolute;
+  width: 390px;
+  z-index: 2;
+  left: 900px;
+  height: 375%;
+}
+.optionav .lft{
+  width: 220px;
+    transition: 0.3s;
+}
+.optionav > li {
+  text-transform: uppercase;
+  text-align: left;
+  cursor: pointer;
+  overflow: hidden;
+  display: block;
+  padding: 3px 10px 3px 12px;
+  background-color: #f5f5f5;
+}
+.menu-option-contain {
+  background-color: #fff;
+  width: 268px;
+  z-index: 2;
+}
+li.hactive {
+  border-bottom: 2px solid #f5f5f5;
+  list-style: none;
+}
+.M14_75 {
+  font-family: Roboto;
+    font-size: 16px;
+    color: #424242;
+    line-height: 37px;
+    font-weight: 600;
+}
+  
+li.shopchoic.spacedown {
+  text-transform: uppercase;
+}
+.B14_42 {
+  font-family: Roboto !important;
+  font-size: 14px !important;
+  color: #424242 !important;
+  line-height: 20px;
+  font-weight: 600;
+}
+.M13_75 {
+  font-family: Roboto;
+  font-size: 13px;
+  color: #757575;
+  line-height: 18px;
+}
+.option-container > ul > li {
+  padding: 7px 0 0 0;
+  list-style: none;
+}
+span.new {
+  font-size: 13px;
+  font-family: Roboto;
+  color: #e53935;
+  background: #fff !important;
+}
+.options2{
+  margin-top: 37px;
+}
+.options2 >img{
+  width: 85%;
+}
+
+#navlink{
+    margin: 0;
+}
+/* Header CSS End   */
+
+/* Footer CSS starts here  */
+.footer-rtb {
+    margin-top: 50px;
+  }
+  .footer-rtb {
+    background-color: #d9f3f4;
+    border-top: 6px solid #fff;
+    width: auto;
+    height: 155px;
+    clear: both;
+    padding-bottom: 28px;
+  }
+  .tic{
+    background-color: #fff;
+      border-radius: 30px;
+      clear: both;
+      height: 60px;
+      margin: 0 auto;
+      position: relative;
+      text-align: center;
+      top: -31px;
+      width: 470px;
+      z-index: 3;
+      box-shadow: 0 0 3px #e0e0e0;
+  }
+  .sprite_footer_bg1 {
+    background: url(//cdn.fcglcdn.com/brainbees/images/sprite-footer1.1.png);
+  }
+  .footer_kid_store {
+    background-position: -163px -88px;
+    display: inline;
+    height: 43px;
+    margin-top: 9px;
+    position: absolute;
+    right: 40px;
+    width: 383px;
+    z-index: 10;
+  }
+  .rtb-img {
+    color: #5d5d5d;
+    display: inline-block;
+    font-size: 15px;
+    height: 100px;
+    position: relative;
+    text-align: center;
+    top: 5px;
+    /* width: 210px; */
+    cursor: default;
+  }
+  .footer_products_info1 {
+    background-position: -151px 346px !important;
+    height: 46px;
+    margin-left: 86px;
+    text-align: center;
+    width: 37px;
+  }
+  .sprite_footer_bg {
+    background: url(//cdn.fcglcdn.com/brainbees/images/sprite-footer1.1.png);
+  }
+  .footer_products_Brands {
+    background-position: -107px 348px;
+    height: 46px;
+    margin-left: 90px;
+    text-align: center;
+    width: 37px;
+  }
+  .rtb-container {
+    width: 80%;
+    margin: auto;
+    line-height: 16px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .footer_products_Customers {
+    background-position: -192px 347px;
+    height: 44px;
+    margin-left: 86px;
+    text-align: center;
+    width: 37px;
+  }
+  .footer_products_Return {
+    background-position: -229px 347px;
+    height: 44px;
+    margin-left: 80px;
+    text-align: center;
+    width: 45px;
+  }
+  .footer_products_Shipping {
+    background-position: -278px 352px;
+    height: 43px;
+    margin-left: 85px;
+    text-align: center;
+    width: 40px;
+  }
+  .fc-footer {
+    width: auto;
+    background-color: #d9f3f4;
+    margin-top: -9px;
+    padding-top: 43px;
+    position: relative;
+  }
+  .liquid_header_main{
+    width: auto !important;
+    /* margin: 0 130px !important; */
+  }
+  .fctr{
+    width: auto !important;
+    margin: 0 60px !important;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .fctr {
+    height: 505px!important;
+  }
+  .link {
+    width: 165px;
+    margin-right: 20px;
+    float: left;
+  }
+  .hdr {
+    font-size: 14px;
+    border-bottom: 1px solid #bfd4d5;
+    margin-bottom: 6px;
+    padding: 7px 0 3px;
+  }
+  .fctr .lcr span {
+    font-size: 12px;
+    margin-bottom: 5px;
+    display: block;
+  }
+  .nhv{
+    cursor: default;
+  }
+  .sitemap{
+    margin-bottom: 4px;
+    font-size: 12px;
+  }
+  .flink4 {
+    width: 270px;
+    margin-right: 10px;
+  }
+  .frace {
+    background-color: #fff;
+    box-shadow: 2px 2px 2px 0 #b7cecf;
+    float: right;
+    width: 370px;
+    height: 85px;
+  }
+  .house_img_footer {
+    float: left;
+    height: 98px;
+    margin-left: 41px;
+    margin-top: -22px;
+    width: 103px;
+  }
+  .sprite_footer_bg_fc {
+    background: url(//cdn.fcglcdn.com/brainbees/images/sprite-footer1.1.png);
+  }
+  .frat {
+    width: 203px;
+    float: right;
+  }
+  .text {
+    font-size: 14px;
+    font-family: RobotoMB;
+    line-height: 17px;
+    margin-bottom: 8px;
+    padding-top: 17px;
+    cursor: pointer;
+  }
+  .know-more input {
+    width: 77px;
+    height: 14px;
+    font-size: 10px;
+    background-color: #6fc341;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  .frace{
+    margin-top: 20px;
+  }
+  #socialicons{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 65px;
+    padding-bottom: 3px;
+    color: #12284c;
+  }
+  
+  /* Footer Css end here   */
+
+  @media screen and (min-width:0) and (max-width: 900px){
+    #nav-btn {
+        display: inline-block;
+        background-color: white;
+        border: 0px;
+        margin-top: 6px;
+    }
+    #navlink {
+        display: inline-block;
+        position: absolute;
+        z-index: 1;
+        background-color: white;
+        left: -2000px;
+        height: max-content;
+        width: 196px;
+    }
+    #nav-icon {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .curser {
+        display: none !important;
+    }
+    li.homesymbol {
+        display: block !important;
+    }
+    .fc_login{
+        display: none;
+    }
+    li.M14_42.mouse {
+        margin-left: -28px;
+    }
+    .menu-container{
+        display: none;
+    }
+    .menu-container > ul > li {
+    padding: 7px 39px 10px 10px
+    }
+    .menu-container {
+        background: #fff;
+    }
+    #homePage {
+        background-color: white;
+        border: 0px;
+        font-size: 21px;
+    }
+    #nav-close {
+        background-color: white;
+        border: 0px;
+        font-size: 21px;
+    }
+    #nav-link .homesymbol:hover {
+        background-color: rgb(255, 255, 255);
+        color: #333;
+    }
+    .headSearchBox {
+        border: 1px solid rgb(238, 238, 238);
+        border-radius: 5px;
+        background-color: #fff;
+        width: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header_logo{
+        width: 100px;
+    }
+
+    .logo_head{
+        padding-left: 20px;
+    }
+
+    .fctr{
+        display: none;
+    }
+
+    footer{
+        display: none;
+    }
+}
