@@ -1,0 +1,78 @@
+body{
+    background-color: #f8f8f8;
+}
+#AllDetailsDiv{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    background-color: white;
+    padding: 50px;
+    text-align: center;
+    justify-content: space-between;
+}
+#leftMainDiv{
+    
+    display: flex;
+    background-color: white;
+    padding: 50px;
+    text-align: center;
+}
+#orderStatus{
+    font-family: Roboto-Bold;
+    font-size: 20px;
+    font-weight: 700;
+    color: #7cb342;
+    line-height: 28px;
+}
+#totalPrice{
+    font-family: "Roboto-Bold";
+    font-size: 18px;
+    color: #212121;
+    line-height: 25px;
+}
+.customerAddress span{
+    color: black;
+}
+#divWithImg{
+    border-right: 1px solid #e0e0e0;
+}
+#divWithImg>p{
+    font-family: "Roboto-Bold";
+    font-size: 14px;
+    color: #2979ff
+    line-height: 20px;
+}
+#userDetails{
+    width: 309px;
+    margin-left: 50px;
+    margin-top: 70px;
+    text-align: left;
+    align-items: center;
+}
+.click{
+    color: #2979ff!important
+}
+#appLink{
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media screen and (min-width:0) and (max-width: 900px){
+    #AllDetailsDiv,#leftMainDiv {
+        display: block;
+        width: 100%;
+        padding: 0px;
+    }
+    #appLink{
+        justify-content: center;
+    }
+    #userDetails{
+        margin: auto;
+    }
+    #divWithImg{
+        border: none;
+    }
+    #divWithImg img{
+        width: 70%;
+    }
+}
