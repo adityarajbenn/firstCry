@@ -180,6 +180,30 @@ document.addEventListener('mouseup', function(e) {
 });
 
 productDescription();
+async function fetchLocation(){
+        
+    let address = JSON.parse(localStorage.getItem("pin"));
+    try{
+        let response = await fetch(`https://api.postalpincode.in/pincode/${address}`);
+        let data = await response.json();
+        findLocation(data[0].PostOffice[0]);
+        console.log(data[0].PostOffice[0]);
+        }
+        catch(error){
+            console.log("Something went wrong");
+        }
+}
+function findLocation(elem){
+
+    let location = document.getElementById('location');
+    if (!elem){
+        location.innerHTML = localStorage.getItem("location") ||`<i class="fa fa-location-dot"></i><span>  Select location</span>`;
+    }
+    else{
+        location.innerHTML = elem.District;
+        localStorage.setItem("location", elem.District);
+    }
+}
 
 document.querySelector("#pincode").addEventListener("keyup", function(event){
     if (event.key == "Enter"){
@@ -191,6 +215,7 @@ document.querySelector("#pincode").addEventListener("keyup", function(event){
             document.querySelector("#pincodeCheckerBefore").style.display =  "none";
             document.querySelector("#pincodeEnter").innerText =   document.querySelector("#pincode").value;
             localStorage.setItem("pin", userPincode);
+            fetchLocation();
         }
         
     }
@@ -474,3 +499,6 @@ cartBtn.onclick = ()=> {
 
 let productName = document.querySelector("#productName");
 productName.innerText = elem.title;
+
+
+findLocation();
