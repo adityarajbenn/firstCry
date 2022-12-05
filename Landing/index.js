@@ -17,6 +17,14 @@ getCart();
 
 loadEvent();
 
+function findLocation(){
+  let location = document.getElementById('location');
+  location.innerHTML = localStorage.getItem("location") ||`<i class="fa fa-location-dot"></i><span>  Select location</span>`; 
+}
+
+findLocation();
+
+
 
 let searchBox = document.getElementById('search_box');
 let searchBtn = document.getElementById('searchBtn');

@@ -14,7 +14,7 @@ let navbar = () =>{
     </div>
     <div class="fc_login">
        <ul>
-        <li><i class="fa fa-location-dot"></i><span>  Select location</span></li>
+        <li id="location"><i class="fa fa-location-dot"></i><span>  Select location</span></li>
         <li><span>Stores & Preschools</span></li>
         <li><span>Support</span></li>
         <li><span>Track Order</span></li>
