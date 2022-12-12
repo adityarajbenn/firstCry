@@ -79,6 +79,9 @@ function display(data){
               btn1.innerText = "ADD TO CART";
               btn1.onclick = ()=>{
 
+                if(btn1.innerText == "GO TO CART"){
+                    window.location.href = "../cart/cart.html";
+                }
                   let obj = new dataObj(id, url1, url2, url3, img1, title, desc, price, strikePrice, delivery, color, off);
                   let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
@@ -191,21 +194,33 @@ let pr3 = document.getElementById("pr3");
 let pr4 = document.getElementById("pr4");
 let pr5 = document.getElementById("pr5");
 
-pr1.addEventListener("change", ()=> sortPrice(pr1, 1));
-pr2.addEventListener("change", ()=> sortPrice(pr2, 2));
-pr3.addEventListener("change", ()=> sortPrice(pr3, 3));
-pr4.addEventListener("change", ()=> sortPrice(pr4, 4));
-pr5.addEventListener("change", ()=> sortPrice(pr5, 5));
+let priceArray = [pr1, pr2, pr3, pr4, pr5];
 
-function sortPrice(pr, val){
-    let arr = [pr1, pr2, pr3, pr4, pr5];
-    for(let p of arr){
-        if(p != pr) p.checked = false;
-    }
+pr1.addEventListener("change", ()=> {
+    disableRest(priceArray, pr1, 1);
+    combine();
+});
+pr2.addEventListener("change", ()=> {
+    disableRest(priceArray, pr2, 2);
+    combine();
+});
+pr3.addEventListener("change", ()=> {
+    disableRest(priceArray, pr3, 3);
+    combine();
+});
+pr4.addEventListener("change", ()=> {
+    disableRest(priceArray, pr4, 4);
+    combine();
+});
+pr5.addEventListener("change", ()=> {
+    disableRest(priceArray, pr5, 5);
+    combine();
+});
+
+function sortPrice(pr, val, temp){
+    let sortedData = temp;
 
     if(pr.checked == true){
-        let temp = JSON.parse(localStorage.getItem("tShirtData"));
-        let sortedData;
     
         if(val == 1){
             sortedData = temp.filter((elem)=> {
@@ -236,15 +251,8 @@ function sortPrice(pr, val){
                 if(elem.price >= 2000 && elem.price <3000) return elem;
             });
         }
-        // console.log(sortedData);
-    
-        display(sortedData)
-        localStorage.setItem("curData", JSON.stringify(sortedData));
-    }else{
-        let tShirtData = JSON.parse(localStorage.getItem("tShirtData"));
-        display(tShirtData);
     }
-    sort.selectedIndex = 0;
+    return sortedData;
 }
 
 // SORT BY DISCOUNT 
@@ -254,60 +262,64 @@ let d3 = document.getElementById("d3");
 let d4 = document.getElementById("d4");
 let d5 = document.getElementById("d5");
 
-d1.addEventListener("change", ()=> sortDisc(d1, 1));
-d2.addEventListener("change", ()=> sortDisc(d2, 2));
-d3.addEventListener("change", ()=> sortDisc(d3, 3));
-d4.addEventListener("change", ()=> sortDisc(d4, 4));
-d5.addEventListener("change", ()=> sortDisc(d5, 5));
+let discountArray = [d1, d2, d3, d4, d5];
 
-function sortDisc(d, val){
-  let arr = [d1, d2, d3, d4, d5];
-  for(let k of arr){
-      if(k != d) k.checked = false;
-  }
+d1.addEventListener("change", ()=> {
+    disableRest(discountArray, d1, 1);
+    combine();
+});
+d2.addEventListener("change", ()=> {
+    disableRest(discountArray, d2, 2);
+    combine();
+});
+d3.addEventListener("change", ()=> {
+    disableRest(discountArray, d3, 3);
+    combine();
+});
+d4.addEventListener("change", ()=> {
+    disableRest(discountArray, d4, 4);
+    combine();
+});
+d5.addEventListener("change", ()=> {
+    disableRest(discountArray, d5, 5);
+    combine();
+});
 
-  if(d.checked == true){
-      let temp = JSON.parse(localStorage.getItem("tShirtData"));
-      let sortedData;
-  
-      if(val == 1){
-          sortedData = temp.filter((elem)=> {
-              if(elem.off >= 0 && elem.off <10) return elem;
-          });
-      }
-  
-      if(val == 2){
-          sortedData = temp.filter((elem)=> {
-              if(elem.off >= 10 && elem.off <20) return elem;
-          });
-      }
-  
-      if(val == 3){
-          sortedData = temp.filter((elem)=> {
-              if(elem.off >= 20 && elem.off <30) return elem;
-          });
-      }
-  
-      if(val == 4){
-          sortedData = temp.filter((elem)=> {
-              if(elem.off >= 30 && elem.off <40) return elem;
-          });
-      }
-  
-      if(val == 5){
-          sortedData = temp.filter((elem)=> {
-              if(elem.off >= 40) return elem;
-          });
-      }
-      // console.log(sortedData);
-  
-      display(sortedData)
-      localStorage.setItem("curData", JSON.stringify(sortedData));
-  }else{
-        let tShirtData = JSON.parse(localStorage.getItem("tShirtData"));
-        display(tShirtData);
-  };
-  sort.selectedIndex = 0;
+function sortDisc(d, val, temp){
+    let sortedData = temp;
+    if(d.checked == true){
+    
+        if(val == 1){
+            sortedData = temp.filter((elem)=> {
+                if(elem.off >= 0 && elem.off <10) return elem;
+            });
+        }
+    
+        if(val == 2){
+            sortedData = temp.filter((elem)=> {
+                if(elem.off >= 10 && elem.off <20) return elem;
+            });
+        }
+    
+        if(val == 3){
+            sortedData = temp.filter((elem)=> {
+                if(elem.off >= 20 && elem.off <30) return elem;
+            });
+        }
+    
+        if(val == 4){
+            sortedData = temp.filter((elem)=> {
+                if(elem.off >= 30 && elem.off <40) return elem;
+            });
+        }
+    
+        if(val == 5){
+            sortedData = temp.filter((elem)=> {
+                if(elem.off >= 40) return elem;
+            });
+        }
+    }
+    return sortedData;
 }
 
 // SORT BY COLORS
@@ -317,61 +329,106 @@ let c3 = document.getElementById("c3");
 let c4 = document.getElementById("c4");
 let c5 = document.getElementById("c5");
 
-c1.addEventListener("change", ()=> sortColor(c1, 1));
-c2.addEventListener("change", ()=> sortColor(c2, 2));
-c3.addEventListener("change", ()=> sortColor(c3, 3));
-c4.addEventListener("change", ()=> sortColor(c4, 4));
-c5.addEventListener("change", ()=> sortColor(c5, 5));
+let colorArray = [c1, c2, c3, c4, c5];
 
-function sortColor(c, val){
-  let arr = [c1, c2, c3, c4, c5];
-  for(let k of arr){
-      if(k != c) k.checked = false;
-  }
+c1.addEventListener("change", ()=> {
+    disableRest(colorArray, c1, 1);
+    combine();
+});
+c2.addEventListener("change", ()=> {
+    disableRest(colorArray, c2, 2);
+    combine();
+});
+c3.addEventListener("change", ()=> {
+    disableRest(colorArray, c3, 3);
+    combine();
+});
+c4.addEventListener("change", ()=> {
+    disableRest(colorArray, c4, 4);
+    combine();
+});
+c5.addEventListener("change", ()=> {
+    disableRest(colorArray, c5, 5);
+    combine();
+});
 
-  if(c.checked == true){
-      let temp = JSON.parse(localStorage.getItem("tShirtData"));
-      let sortedData;
-  
-      if(val == 1){
-          sortedData = temp.filter((elem)=> {
-              if(elem.color == 'blue') return elem;
-          });
-      }
-  
-      if(val == 2){
-          sortedData = temp.filter((elem)=> {
-              if(elem.color == 'white') return elem;
-          });
-      }
-  
-      if(val == 3){
-          sortedData = temp.filter((elem)=> {
-              if(elem.color == 'red') return elem;
-          });
-      }
-  
-      if(val == 4){
-          sortedData = temp.filter((elem)=> {
-              if(elem.color == 'yellow') return elem;
-          });
-      }
-  
-      if(val == 5){
-          sortedData = temp.filter((elem)=> {
-              if(elem.color == 'green') return elem;
-          });
-      }
-      // console.log(sortedData);
-  
-      display(sortedData)
-      localStorage.setItem("curData", JSON.stringify(sortedData));
-  }else{
-        let tShirtData = JSON.parse(localStorage.getItem("tShirtData"));
-        display(tShirtData);
-  }
-  sort.selectedIndex = 0;
+function sortColor(c, val, temp){
+
+    let sortedData = temp;
+    if(c.checked == true){
+    
+        if(val == 1){
+            sortedData = temp.filter((elem)=> {
+                if(elem.color == 'blue') return elem;
+            });
+        }
+    
+        if(val == 2){
+            sortedData = temp.filter((elem)=> {
+                if(elem.color == 'white') return elem;
+            });
+        }
+    
+        if(val == 3){
+            sortedData = temp.filter((elem)=> {
+                if(elem.color == 'red') return elem;
+            });
+        }
+    
+        if(val == 4){
+            sortedData = temp.filter((elem)=> {
+                if(elem.color == 'yellow') return elem;
+            });
+        }
+    
+        if(val == 5){
+            sortedData = temp.filter((elem)=> {
+                if(elem.color == 'green') return elem;
+            });
+        }
+    }
+    return sortedData;
 }
+
+// EXPERIMENT 
+function combine(){
+    let curData = JSON.parse(localStorage.getItem("debounce")) || JSON.parse(localStorage.getItem("tShirtData"));
+    localStorage.removeItem('debounce');
+
+    let priceArr = [pr1, pr2, pr3, pr4, pr5];
+    let discountArr = [d1, d2, d3, d4, d5];
+    let colorArr = [c1, c2, c3, c4, c5];
+
+    for(let p of priceArr){
+        if(p.checked == true){
+            curData = sortPrice(p, p.value, curData);
+        }
+    }
+
+    for(let d of discountArr){
+        if(d.checked == true){
+            curData = sortDisc(d, d.value, curData);
+        }
+    }
+
+    for(let c of colorArr){
+        if(c.checked == true){
+            curData = sortColor(c, c.value, curData);
+        }
+    }
+
+    sort.selectedIndex = 0;
+    display(curData)
+    localStorage.setItem("curData", JSON.stringify(curData));
+}
+
+function disableRest(arr, tag, val){
+    for(let k of arr){
+        if(k.value != val) k.checked = false;
+    }
+}
+// EXPERIMENT 
+
 
 function updateTot(){
     let productNo = JSON.parse(localStorage.getItem('cart'));
@@ -383,16 +440,26 @@ function updateTot(){
 let searchBox = document.getElementById('search_box');
 let searchBtn = document.getElementById('searchBtn');
 
-searchBtn.onclick = ()=> {
-    let val = searchBox.value;
-    let showData = JSON.parse(localStorage.getItem('tShirtData')) || [];
-    
-    let filteredData = showData.filter(({title})=> {
-        if(title.toLowerCase().includes(val.toLowerCase())) return true;
-    });
+searchBox.oninput = ()=> {
+    debounce();
+}
 
-    if(filteredData.length == 0) display(showData);
-    else display(filteredData);
+let id;
+function debounce(){
+    if(id) clearTimeout(id);
+    id = setTimeout(()=> {
+        let val = searchBox.value;
+        let showData = JSON.parse(localStorage.getItem('tShirtData')) || [];
+        
+        let filteredData = showData.filter(({title})=> {
+            if(title.toLowerCase().includes(val.toLowerCase())) return true;
+        });
+
+        localStorage.setItem('debounce', JSON.stringify(filteredData));
+        if(filteredData.length == 0) display(showData);
+        else display(filteredData);
+        console.log('hai')
+    }, 1000);
 }
 
 let cartBtn = document.getElementById('cartBtn');
@@ -403,3 +470,9 @@ cartBtn.onclick = ()=> {
 let pinCode = document.getElementById('pinCode');
 let pin = localStorage.getItem('pin') || " ";
 pinCode.innerText = pin;
+
+function findLocation(){
+    let location = document.getElementById('location');
+    location.innerHTML = localStorage.getItem('location') || '<i class="fa fa-location-dot"></i><span>  Select location</span>'
+}
+findLocation()  
