@@ -18,4 +18,4 @@
 
 ### Products detail
 
-<image src="./images/productsdtails.png">
+<image src="./images/productsdtaile.png">
