@@ -1,6 +1,8 @@
 ## FirstCry 
 <a href="https://firstcry-clone.netlify.app/" alt="link">FirstCry Link<a>
 
+## tech stack --> HTML CSS JS
+
 ## for Product page
 ### Landing page --> All categories --> T-shirts
 
