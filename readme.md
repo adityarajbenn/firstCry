@@ -1,5 +1,5 @@
 ## FirstCry 
-<a src="https://firstcry-clone.netlify.app/" alt="link">FirstCry Link<a>
+<a href="https://firstcry-clone.netlify.app/" alt="link">FirstCry Link<a>
 
 ## for Product page
 ### Landing page --> All categories --> T-shirts
@@ -18,4 +18,4 @@
 
 ### Products detail
 
-<image src="./images/productsdtails.png>
+<image src="./images/productsdtails.png">
