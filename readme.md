@@ -1,2 +1,2 @@
 ### FirstCry 
-<image src="./firstcry.png/images">
+<image src="./images/firstcry.png">
